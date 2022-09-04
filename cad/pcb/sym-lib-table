@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name "Phototransistor")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_1541201NEA400/1541201NEA400/KiCad/1541201NEA400.lib")(options "")(descr ""))
+  (lib (name "Phototransistor")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_SFH_3710-Z/SFH_3710-Z/KiCad/SFH_3710-Z.lib")(options "")(descr ""))
   (lib (name "nRF52810")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_NRF52810-QFAA-T/NRF52810-QFAA-T/KiCad/NRF52810-QFAA-T.lib")(options "")(descr ""))
   (lib (name "Gyroscope")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_MXC4005XC/MXC4005XC/KiCad/MXC4005XC.lib")(options "")(descr ""))
   (lib (name "Battery Protection")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_AP9101CAK6-ABTRG1/AP9101CAK6-ABTRG1/KiCad/AP9101CAK6-ABTRG1.lib")(options "")(descr ""))
@@ -8,7 +8,7 @@
   (lib (name "LED green")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_150080GS75000/150080GS75000/KiCad/150080GS75000.lib")(options "")(descr ""))
   (lib (name "LED red")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_150060SS75000/150060SS75000/KiCad/150060SS75000.lib")(options "")(descr ""))
   (lib (name "MOSFET")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_SSM6N68NU,LF/SSM6N68NU,LF/KiCad/SSM6N68NU_LF.lib")(options "")(descr ""))
-  (lib (name "I{slash}O-Expander")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_KTS1620ERG-TR/KTS1620ERG-TR/KiCad/KTS1620ERG-TR.lib")(options "")(descr ""))
+  (lib (name "I{slash}O-Expander")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_PCA9957HNMP/PCA9957HNMP/KiCad/PCA9957HNMP.lib")(options "")(descr ""))
   (lib (name "Battery Charger")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_BQ25606RGET/BQ25606RGET/KiCad/BQ25606RGET.lib")(options "")(descr ""))
   (lib (name "ESD Protection")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_SP0503BAHTG/SP0503BAHTG/KiCad/SP0503BAHTG.lib")(options "")(descr ""))
 )

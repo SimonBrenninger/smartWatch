@@ -1,0 +1,13 @@
+(fp_lib_table
+  (lib (name "nRF52810")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_NRF52810-QFAA-T/NRF52810-QFAA-T/KiCad")(options "")(descr ""))
+  (lib (name "Phototransistor")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_SFH_3710-Z/SFH_3710-Z/KiCad")(options "")(descr ""))
+  (lib (name "IO Expander")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_PCA9957HNMP/PCA9957HNMP/KiCad")(options "")(descr ""))
+  (lib (name "Gyroscope")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_MXC4005XC/MXC4005XC/KiCad")(options "")(descr ""))
+  (lib (name "Protection")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_AP9101CAK6-ABTRG1/AP9101CAK6-ABTRG1/KiCad")(options "")(descr ""))
+  (lib (name "Charger")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_BQ25606RGET/BQ25606RGET/KiCad")(options "")(descr ""))
+  (lib (name "DC-DC")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_ISL9110IRT7Z-T7A/ISL9110IRT7Z-T7A/KiCad")(options "")(descr ""))
+  (lib (name "ESD")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_SP0503BAHTG/SP0503BAHTG/KiCad")(options "")(descr ""))
+  (lib (name "LED green")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_150080GS75000/150080GS75000/KiCad")(options "")(descr ""))
+  (lib (name "LED red")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_150060SS75000/150060SS75000/KiCad")(options "")(descr ""))
+  (lib (name "Mosfet")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_SSM6N68NU,LF/SSM6N68NU,LF/KiCad")(options "")(descr ""))
+)
