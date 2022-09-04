@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP NRF52810-QFAA-T
-D RF System on a Chip - SoC BLE 5 Ready OTA QFN 48pin 6x6mm
-K
-F https://componentsearchengine.com//nRF52810-QFAA-T.pdf
-$ENDCMP
-#
-#End Doc Library

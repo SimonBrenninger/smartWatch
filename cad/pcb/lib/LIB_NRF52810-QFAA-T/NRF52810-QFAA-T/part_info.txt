@@ -1,9 +1,0 @@
-Manufacturer=Nordic Semiconductor
-PartNumber=NRF52810-QFAA-T
-PartCategory=Integrated Circuit
-PackageCategory=Quad Flat No-Lead
-PinCount=49
-Version=1.1
-Released=2019-11-04 16:55:41
-Downloaded=2022-07-23 16:49:10
-3D=Y

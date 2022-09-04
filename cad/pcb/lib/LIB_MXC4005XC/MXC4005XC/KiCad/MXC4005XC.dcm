@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP MXC4005XC
-D Accelerometers Monolithic and Wafer Level Packaged Three-Axis Accelerometer
-K
-F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/aa0fcdfc55209a6ab2215b00180fe2f1.pdf
-$ENDCMP
-#
-#End Doc Library

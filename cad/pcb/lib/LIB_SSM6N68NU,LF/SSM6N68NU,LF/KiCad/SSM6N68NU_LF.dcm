@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SSM6N68NU,LF
-D MOSFET LowON Res MOSFET ID=4A VDSS=30V
-K
-F http://toshiba.semicon-storage.com/info/docget.jsp?did=60465&prodName=SSM6N68NU
-$ENDCMP
-#
-#End Doc Library

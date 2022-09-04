@@ -1,9 +1,0 @@
-Manufacturer=Diodes Inc.
-PartNumber=AP9101CAK6-ABTRG1
-PartCategory=Integrated Circuit
-PackageCategory=SOT23 (6-Pin)
-PinCount=6
-Version=1.1
-Released=2018-01-20 14:36:36
-Downloaded=2022-07-03 16:51:41
-3D=Y

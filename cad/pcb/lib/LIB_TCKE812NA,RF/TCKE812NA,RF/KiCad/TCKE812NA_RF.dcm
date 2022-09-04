@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP TCKE812NA,RF
-D Hot Swap Voltage Controllers 15.1V VOLTAGE CLMP AUTO RETRY
-K
-F https://www.arrow.com/en/products/tcke812narf/toshiba
-$ENDCMP
-#
-#End Doc Library
