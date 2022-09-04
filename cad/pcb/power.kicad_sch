@@ -1074,7 +1074,6 @@
     )
   )
 
-
   (junction (at 35.56 138.43) (diameter 0) (color 0 0 0 0)
     (uuid 019ada7f-e0a0-45c6-8c00-b2d814b10042)
   )
@@ -3543,7 +3542,7 @@
     (property "Value" "2u2" (id 1) (at 133.35 125.73 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Inductor_SMD:L_0603_1608Metric" (id 2) (at 138.43 124.46 0)
+    (property "Footprint" "Inductor_SMD:L_1008_2520Metric" (id 2) (at 138.43 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 138.43 124.46 0)

@@ -12,7 +12,7 @@ hardware design guides
 
 
 RF Section:
-trace width: 29.3mm
+trace width: 0.293mm
 critical length: 5.6mm
 
 P=U*I
