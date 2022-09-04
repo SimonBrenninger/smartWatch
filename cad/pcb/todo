@@ -4,7 +4,17 @@ connector (bat, swd, )
 net-label
 usb
 rf antenna
-
 crystal oscillator
+
 power rating
 hardware design guides
+
+
+
+RF Section:
+trace width: 29.3mm
+critical length: 5.6mm
+
+P=U*I
+
+P=U*U/R

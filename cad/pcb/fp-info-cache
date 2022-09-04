@@ -1,4 +1,4 @@
-20400637547567738
+20403961537363158
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -86100,12 +86100,26 @@ varistor SIOV
 2
 2
 myLib
+Crystal_SMD_2016-4Pin_2.0x1.6mm
+SMD Crystal SERIES SMD2016/4 http://www.q-crystal.com/upload/5/2015552223166229.pdf, 2.0x1.6mm^2 package
+SMD SMT crystal
+0
+4
+4
+myLib
+Ignion_NN01-102_BT_WIFI
+
+
+0
+2
+2
+myLib
 USB_C_Receptacle_Amphenol_12401598
 
 
 0
-20
-17
+28
+25
 myLib
 USB_C_Receptacle_Molex_216990-0003
 
