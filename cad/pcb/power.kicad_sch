@@ -1,0 +1,17 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid a7164fba-7877-43fc-9c8c-cf7f0a1636f6)
+
+  (paper "A4")
+
+  (title_block
+    (title "SmartWatch - [2] Power")
+    (date "2022-06-19")
+    (rev "0.1")
+    (comment 4 "Simon Brenninger")
+  )
+
+  (lib_symbols
+  )
+
+)

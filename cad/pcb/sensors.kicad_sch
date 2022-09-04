@@ -1,0 +1,16 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 52724d63-02c2-4ff6-b8e9-ded82b416ac8)
+
+  (paper "A4")
+
+  (title_block
+    (title "SmartWatch - [5] Sensors")
+    (date "2022-06-19")
+    (comment 4 "Simon Brenninger")
+  )
+
+  (lib_symbols
+  )
+
+)

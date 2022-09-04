@@ -1,0 +1,16 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid ab416139-88d2-45c6-a48c-757952b90ec2)
+
+  (paper "A4")
+
+  (title_block
+    (title "SmartWatch - [4] LEDs")
+    (date "2022-06-19")
+    (comment 4 "Simon Brenninger")
+  )
+
+  (lib_symbols
+  )
+
+)
