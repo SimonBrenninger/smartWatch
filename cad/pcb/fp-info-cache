@@ -1,4 +1,4 @@
-20405659760493086
+20407322305948096
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -86101,6 +86101,13 @@ SMD SMT crystal
 4
 myLib
 Ignion_NN01-102_BT_WIFI
+
+
+0
+2
+2
+myLib
+PinHeader_P2mm_1x02_SMD
 
 
 0
