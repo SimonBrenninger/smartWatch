@@ -1,0 +1,9 @@
+Manufacturer=Toshiba
+PartNumber=SSM6N68NU,LF
+PartCategory=MOSFET (N-Channel)
+PackageCategory=Other
+PinCount=8
+Version=1.1
+Released=2019-09-04 16:49:36
+Downloaded=2022-07-03 19:42:20
+3D=Y

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SSM6N68NU_LF'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER2_PART_NUMBER", "MOUSER2_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Toshiba", "SSM6N68NU,LF" (!) = "", "SSM6N68NULF", "Other", "", "", "MOSFET LowON Res MOSFET ID=4A VDSS=30V", "http://toshiba.semicon-storage.com/info/docget.jsp?did=60465&prodName=SSM6N68NU", "0.8 mm"
+END_PART
+
+END.

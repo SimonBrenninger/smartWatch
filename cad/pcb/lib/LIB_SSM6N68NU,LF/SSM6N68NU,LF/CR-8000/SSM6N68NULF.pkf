@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "SSM6N68NULF"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "SSM6N68NULF")
+        (spec "default")
+    )
+)
