@@ -1,0 +1,30 @@
+Altium Designer Pick and Place Locations
+D:\Applications\reference_layouts\nrf52810_caaa\trunk\production_files\nrf52810_caaa_dcdc_pick_and_place.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       26.04.18
+Time:       14:31
+Revision:   14260
+Variant:    No variations
+Units used: mil
+
+Designator Comment       Layer    Footprint               Center-X(mil) Center-Y(mil) Rotation Description                                                                      
+L2         3.3nH         TopLayer INDC0603X03L_C          -116.129      -7.881        180      "High frequency chip inductor ±5%"                                               
+C3         1.2pF         TopLayer CAPC0603X03L_C          -94.626       25.123        270      "Capacitor, NP0, ±5%"                                                            
+C6         100pF         TopLayer CAPC0603X03L_C          -13.126       95.252        270      "Capacitor, NP0, ±2%"                                                            
+L1         2.2nH         TopLayer INDC0603X03L_C          -73.129       -7.877        180      "High frequency chip inductor ±5%"                                               
+C5         100nF         TopLayer CAPC0603X03L_C          23.000        -88.874       270      "Capacitor, X5R, ±10%"                                                           
+L4         15nH          TopLayer INDC1005X04L            79.874        171.252       360      "High frequency chip inductor ±10%"                                              
+L3         10µH          TopLayer INDC1608X06L            64.874        104.252       270      "Chip inductor, IDC,min = 50 mA, ±20%"                                           
+C4         100nF         TopLayer CAPC0603X03L_C          79.874        25.252        0        "Capacitor, X5R, ±10%"                                                           
+X1         32MHz         TopLayer BT-XTAL_2016            -83.126       148.252       0        "XTAL SMD 2016, 32MHz, Cl=8pF, Total Tol: ±40ppm"                                
+C10        12pF          TopLayer CAPC0603X03L_C          141.874       -71.748       90       "Capacitor, NP0, ±2%"                                                            
+C7         4.7µF         TopLayer CAPC1608X06L            137.874       62.252        360      "Capacitor, X5R, ±10%"                                                           
+C8         1.0µF         TopLayer CAPC1005X04L            23.874        149.252       90       "Capacitor, X5R, ±5%"                                                            
+C2         12pF          TopLayer CAPC0603X03L_C          -82.126       203.252       360      "Capacitor, NP0, ±2%"                                                            
+C1         12pF          TopLayer CAPC0603X03L_C          -146.126      147.252       270      "Capacitor, NP0, ±2%"                                                            
+C9         12pF          TopLayer CAPC0603X03L_C          115.874       -71.748       90       "Capacitor, NP0, ±2%"                                                            
+U1         nRF52810-CAAA TopLayer BGA33C40P6X6_247X246X50 0.000         0.000         0        "Multi-protocol Bluetooth Low Energy, ANT and 2.4GHz proprietary system-on-chip" 
+X2         32.768kHz     TopLayer XTAL_2012               128.874       -18.748       360      "XTAL SMD 2012, 32.768kHz, Cl=9pF, Total Tol: ±50ppm"                            
