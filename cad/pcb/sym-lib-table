@@ -11,4 +11,5 @@
   (lib (name "I{slash}O-Expander")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_PCA9957HNMP/PCA9957HNMP/KiCad/PCA9957HNMP.lib")(options "")(descr ""))
   (lib (name "Battery Charger")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_BQ25606RGET/BQ25606RGET/KiCad/BQ25606RGET.lib")(options "")(descr ""))
   (lib (name "ESD Protection")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_SP0503BAHTG/SP0503BAHTG/KiCad/SP0503BAHTG.lib")(options "")(descr ""))
+  (lib (name "USB-C Receptacle")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_217175-0001/217175-0001/KiCad/217175-0001.lib")(options "")(descr ""))
 )

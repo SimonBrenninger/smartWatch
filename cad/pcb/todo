@@ -1,5 +1,6 @@
 testpoints
 charger resistor
+
 connector (bat, swd, usb) (tag-connect?)
 net-label
 rf antenna

@@ -10,4 +10,5 @@
   (lib (name "LED green")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_150080GS75000/150080GS75000/KiCad")(options "")(descr ""))
   (lib (name "LED red")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_150060SS75000/150060SS75000/KiCad")(options "")(descr ""))
   (lib (name "Mosfet")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_SSM6N68NU,LF/SSM6N68NU,LF/KiCad")(options "")(descr ""))
+  (lib (name "JST-ZH")(type "KiCad")(uri "${KIPRJMOD}/lib/LIB_JST-ZH/JST-ZH.pretty")(options "")(descr ""))
 )

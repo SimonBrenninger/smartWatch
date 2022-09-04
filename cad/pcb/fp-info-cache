@@ -1,4 +1,4 @@
-20377408038102545
+20397314158978545
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -6243,6 +6243,13 @@ capacitor tantalum
 0
 2
 2
+Charger
+QFN50P400X400X100-25N
+VQFN-24
+Power Supply
+0
+25
+25
 Connector
 Banana_Jack_1Pin
 Single banana socket, footprint - 6mm drill
@@ -50224,6 +50231,13 @@ SMD SMT ceramic resonator filter filter hand-soldering
 0
 3
 3
+DC-DC
+SON40P300X300X75-13N
+ISL9110IRT7Z-T7A
+Integrated Circuit
+0
+13
+13
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -52114,6 +52128,13 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+ESD
+SP0503BAHTG
+SP0503BAHTG-1
+TVS Diode (Uni-directional)
+0
+4
+4
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -52982,6 +53003,13 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
+Gyroscope
+MXC4005XC
+MXC4005XC-2
+Integrated Circuit
+0
+6
+6
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -53094,6 +53122,13 @@ heatsink
 0
 2
 1
+IO Expander
+PCA9957HNMP
+PCA9957HNMP-10
+Integrated Circuit
+0
+41
+41
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
@@ -56433,6 +56468,13 @@ L_Toroid Vertical series Radial pin pitch 31.80mm  length 67.6mm width 36.1mm Vi
 0
 2
 2
+JST-ZH
+JST-ZH_1x02_SWD
+
+
+0
+4
+2
 Jumper
 SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 2 copper strips
@@ -56580,6 +56622,20 @@ solder jumper open
 0
 5
 3
+LED green
+LEDM2012X80N
+WL-SMCW
+LED
+0
+2
+2
+LED red
+LEDC1608X80N
+0603
+LED
+0
+2
+2
 LED_SMD
 LED-APA102-2020
 http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf
@@ -57910,6 +57966,13 @@ ESP8266 WiFi microcontroller
 0
 16
 16
+Mosfet
+SSM6N68NULF
+UDFN6
+MOSFET (N-Channel)
+0
+8
+8
 MountingEquipment
 DINRailAdapter_3xM3_PhoenixContact_1201578
 https://www.phoenixcontact.com/online/portal/us?uri=pxc-oc-itemdetail:pid=1201578&library=usen&tab=1
@@ -75088,6 +75151,13 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+Phototransistor
+LEDC2012X95N
+SFH 3710_1
+Diode
+0
+2
+2
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf
@@ -76012,6 +76082,13 @@ Potentiometer vertical Vishay T73YP
 0
 3
 3
+Protection
+SOT95P285X140-6N
+SOT26_3
+Integrated Circuit
+0
+6
+6
 RF
 Skyworks_SKY13575_639LF
 http://www.skyworksinc.com/uploads/documents/SKY13575_639LF_203270D.pdf
@@ -86022,3 +86099,10 @@ varistor SIOV
 0
 2
 2
+nRF52810
+QFN40P600X600X90-49N
+QFN48-A
+Integrated Circuit
+0
+49
+49
