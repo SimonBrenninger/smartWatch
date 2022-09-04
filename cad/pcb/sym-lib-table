@@ -10,4 +10,5 @@
   (lib (name "MOSFET")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_SSM6N68NU,LF/SSM6N68NU,LF/KiCad/SSM6N68NU_LF.lib")(options "")(descr ""))
   (lib (name "I{slash}O-Expander")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_KTS1620ERG-TR/KTS1620ERG-TR/KiCad/KTS1620ERG-TR.lib")(options "")(descr ""))
   (lib (name "Battery Charger")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_BQ25606RGET/BQ25606RGET/KiCad/BQ25606RGET.lib")(options "")(descr ""))
+  (lib (name "ESD Protection")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_SP0503BAHTG/SP0503BAHTG/KiCad/SP0503BAHTG.lib")(options "")(descr ""))
 )
