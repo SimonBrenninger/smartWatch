@@ -710,10 +710,10 @@
       (reference "S1") (unit 1) (value "nRST") (footprint "myLib:Tactile_E-Switch_TL3780AF240QG")
     )
     (path "/83d55f7e-93d8-458a-b0d8-2b433b8d1273/9f12cbe3-67fb-4423-bb8a-3574c7fdfaf3"
-      (reference "S2") (unit 1) (value "BTN0") (footprint "myLib:Tactile_Panasonic_EVQ-P7J01P")
+      (reference "S2") (unit 1) (value "BTN0") (footprint "myLib:Tactile_Panasonic_EVQP7J01P")
     )
     (path "/83d55f7e-93d8-458a-b0d8-2b433b8d1273/ca5c4181-0e9e-41c8-be0f-621acf2552b2"
-      (reference "S3") (unit 1) (value "BTN1") (footprint "myLib:Tactile_Panasonic_EVQ-P7J01P")
+      (reference "S3") (unit 1) (value "BTN1") (footprint "myLib:Tactile_Panasonic_EVQP7J01P")
     )
     (path "/d3884c04-9380-47db-a351-111e0f79aee5/7642e633-793b-45a7-9457-72b93e544cbb"
       (reference "TP1") (unit 1) (value "3.3V") (footprint "TestPoint:TestPoint_Pad_D1.0mm")
