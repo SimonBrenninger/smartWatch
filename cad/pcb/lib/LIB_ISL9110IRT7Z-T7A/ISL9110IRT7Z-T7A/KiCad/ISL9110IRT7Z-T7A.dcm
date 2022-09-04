@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ISL9110IRT7Z-T7A
+D Switching Voltage Regulators 1 2A SINGLE IND BUCK BOOST 3 3V 12LD
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-SFU4/DSASF4000-1643.pdf
+$ENDCMP
+#
+#End Doc Library

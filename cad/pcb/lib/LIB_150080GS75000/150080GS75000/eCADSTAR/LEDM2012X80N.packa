@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "150080GS75000"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-08-24-23:01:37)
+    (mountForm default
+        (footprintRef "LEDM2012X80N")
+        (spec "System")
+    )
+)

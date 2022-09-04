@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '150060SS75000'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Wurth Elektronik", "150060SS75000" (!) = "", "LEDC1608X80N", "LEDs Chip", "710-150060SS75000", "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/150060SS75000?qs=LlUlMxKIyB0oQaxwspeTEA%3D%3D", "LED,Wurth Elektronik,150060SS75000 Wurth Elektronik 150060SS75000, WL-SMCW Series Red LED, 630 nm, 1608 (0603) Clear, Rectangle Lens SMD Package", "", "0.8 mm"
+END_PART
+
+END.

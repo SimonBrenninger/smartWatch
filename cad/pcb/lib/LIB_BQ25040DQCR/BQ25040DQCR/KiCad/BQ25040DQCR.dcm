@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BQ25040DQCR
+D 1.1A, Single-Input, Single Cell Li-Ion Battery Charger With 50mA LDO in 2x3 QFN
+K
+F http://www.ti.com/lit/gpn/bq25040
+$ENDCMP
+#
+#End Doc Library

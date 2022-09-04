@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "CP2102NA02GQFN20"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "CP2102NA02GQFN20")
+        (spec "default")
+    )
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 150060SS75000
+D LED,Wurth Elektronik,150060SS75000 Wurth Elektronik 150060SS75000, WL-SMCW Series Red LED, 630 nm, 1608 (0603) Clear, Rectangle Lens SMD Package
+K
+F 
+$ENDCMP
+#
+#End Doc Library

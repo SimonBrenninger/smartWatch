@@ -1,0 +1,9 @@
+Manufacturer=Würth Elektronik
+PartNumber=150080GS75000
+PartCategory=LED
+PackageCategory=LED Moulded
+PinCount=2
+Version=1.1
+Released=2018-08-24 23:01:37
+Downloaded=2022-07-03 17:44:37
+3D=Y

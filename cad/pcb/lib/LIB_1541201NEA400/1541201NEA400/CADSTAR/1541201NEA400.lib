@@ -1,0 +1,16 @@
+.1541201NEA400 :1 ;WURTH ELEKTRONIK - 1541201NEA400 - Phototransistor, 940 nm, 140 , 150 mW, 2 Pins, 1206, WL-STCB Series
+"1541201NEA400"
+*STM Q
+*NGS
+*PLB 1="C" 2="E"
+*MXP 2
+*DFN 1541201NEA400
+~!Mouser Part Number (710-1541201NEA400)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/1541201NEA400?qs=u16ybLDytRZ%252BRXqtXC1wNA%3D%3D)
+~!Manufacturer_Name (Wurth Elektronik)
+~!Manufacturer_Part_Number (1541201NEA400)
+~!Link Datasheet (https://www.mouser.dk/datasheet/2/445/1541201NEA400-1715480.pdf)
+~!Height (1.2mm)
+~!3D_Model (1541201NEA400)
+"1541201NEA400"
+1.1!U 2.1!U 

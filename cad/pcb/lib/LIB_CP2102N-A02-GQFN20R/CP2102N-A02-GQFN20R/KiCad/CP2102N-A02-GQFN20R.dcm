@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CP2102N-A02-GQFN20R
+D Full Speed USB to UART Bridge USB 2.0 3.3V T/R Automotive 20-Pin QFN EP
+K
+F https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf
+$ENDCMP
+#
+#End Doc Library

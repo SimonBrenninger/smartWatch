@@ -1,0 +1,12 @@
+(sym_lib_table
+  (lib (name "Phototransistor")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_PI4IOE5V96224ZLEX/PI4IOE5V96224ZLEX/KiCad/PI4IOE5V96224ZLEX.lib")(options "")(descr ""))
+  (lib (name "I{slash}O Expander")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_PI4IOE5V96224ZLEX/PI4IOE5V96224ZLEX/KiCad/PI4IOE5V96224ZLEX.lib")(options "")(descr ""))
+  (lib (name "Gyroscope")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_MXC4005XC/MXC4005XC/KiCad/MXC4005XC.lib")(options "")(descr ""))
+  (lib (name "USB-UART Bridge")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_CP2102N-A02-GQFN20R/CP2102N-A02-GQFN20R/KiCad/CP2102N-A02-GQFN20R.lib")(options "")(descr ""))
+  (lib (name "Battery Protection")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_AP9101CAK6-ABTRG1/AP9101CAK6-ABTRG1/KiCad/AP9101CAK6-ABTRG1.lib")(options "")(descr ""))
+  (lib (name "Battery Charger")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_BQ25040DQCR/BQ25040DQCR/KiCad/BQ25040DQCR.lib")(options "")(descr ""))
+  (lib (name "eFuse")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_TCKE812NA,RF/TCKE812NA,RF/KiCad/TCKE812NA_RF.lib")(options "")(descr ""))
+  (lib (name "Voltage Regulator")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_ISL9110IRT7Z-T7A/ISL9110IRT7Z-T7A/KiCad/ISL9110IRT7Z-T7A.lib")(options "")(descr ""))
+  (lib (name "LED green")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_150080GS75000/150080GS75000/KiCad/150080GS75000.lib")(options "")(descr ""))
+  (lib (name "LED red")(type "Legacy")(uri "${KIPRJMOD}/lib/LIB_150060SS75000/150060SS75000/KiCad/150060SS75000.lib")(options "")(descr ""))
+)

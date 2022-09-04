@@ -1,0 +1,16 @@
+.150080GS75000 :1 ;150080GS75000, Wurth Elektronik WL-SMCW 520 nm Green LED, 2012 (0805) Clear SMD package
+LEDM2012X80N
+*STM LED
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN 150080GS75000
+~!Mouser Part Number (710-150080GS75000)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/150080GS75000?qs=2kOmHSv6VfQRoTEZVk1mGA%3D%3D)
+~!Manufacturer_Name (Wurth Elektronik)
+~!Manufacturer_Part_Number (150080GS75000)
+~!Link Datasheet (https://katalog.we-online.com/led/datasheet/150080GS75000.pdf)
+~!Height (0.8mm)
+~!3D_Model (150080GS75000)
+"150080GS75000"
+1.1!U 2.1!U 

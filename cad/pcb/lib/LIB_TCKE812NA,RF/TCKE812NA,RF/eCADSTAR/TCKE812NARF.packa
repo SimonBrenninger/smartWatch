@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "TCKE812NA_RF"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-02-21-19:19:41)
+    (mountForm default
+        (footprintRef "TCKE812NARF")
+        (spec "System")
+    )
+)

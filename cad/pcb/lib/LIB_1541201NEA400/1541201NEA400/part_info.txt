@@ -1,0 +1,9 @@
+Manufacturer=Würth Elektronik
+PartNumber=1541201NEA400
+PartCategory=Phototransistor
+PackageCategory=Other
+PinCount=2
+Version=1.5
+Released=2020-09-01 11:46:25
+Downloaded=2022-07-03 16:50:23
+3D=Y

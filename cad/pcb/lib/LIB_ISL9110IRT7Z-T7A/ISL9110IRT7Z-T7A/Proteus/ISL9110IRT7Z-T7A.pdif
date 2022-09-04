@@ -1,0 +1,169 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "ISL9110IRT7Z-T7A"
+   (description "Switching Voltage Regulators 1 2A SINGLE IND BUCK BOOST 3 3V 12LD")
+   (family "ANA")
+   (package "SON40P300X300X75-13N")
+   (attribute "Datasheet Link" "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-SFU4/DSASF4000-1643.pdf")
+   (attribute "Geometry.Height" "0.75mm")
+   (attribute "Mouser Part Number" "968-ISL9110IRT7Z-T7A")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Renesas-Intersil/ISL9110IRT7Z-T7A?qs=dAsayXGOMrujtMdmCjK0tg%3D%3D")
+   (attribute "Manufacturer_Name" "Renesas Electronics")
+   (attribute "Manufacturer_Part_Number" "ISL9110IRT7Z-T7A")
+   (gate
+    (symbol "ISL9110IRT7Z-T7A")
+    (pin "VOUT" 1 PS)
+    (pin "LX2" 2 PS)
+    (pin "PGND" 3 PS)
+    (pin "LX1" 4 PS)
+    (pin "PVIN" 5 PS)
+    (pin "VIN" 6 PS)
+    (pin "EP" 13 PS)
+    (pin "FB" 12 PS)
+    (pin "GND" 11 PS)
+    (pin "MODE/SYNC" 10 PS)
+    (pin "EN" 9 PS)
+    (pin "$BAT$" 8 PS)
+    (pin "PG" 7 PS)
+   )
+  )
+  (symbol "ISL9110IRT7Z-T7A"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1200 100) (pt 1200 -800) (pt 200 -800) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 -1000) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -500) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SON40P300X300X75-13N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -2.125 1.75)
+      (pt 2.125 1.75)
+      (pt 2.125 -1.75)
+      (pt -2.125 -1.75)
+      (pt -2.125 1.75))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.5 1.5)
+      (pt 1.5 1.5)
+      (pt 1.5 -1.5)
+      (pt -1.5 -1.5)
+      (pt -1.5 1.5))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.5 0.75)
+      (pt -0.75 1.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.25)
+     (circle
+      (pt -1.775 1.6) (pt -2.025 1.6)
+     )
+    )
+   )
+   (leg 1 (pt -1.5 1) (padstack 0))
+   (leg 2 (pt -1.5 0.6) (padstack 0))
+   (leg 3 (pt -1.5 0.2) (padstack 0))
+   (leg 4 (pt -1.5 -0.2) (padstack 0))
+   (leg 5 (pt -1.5 -0.6) (padstack 0))
+   (leg 6 (pt -1.5 -1) (padstack 0))
+   (leg 7 (pt 1.5 -1) (padstack 0))
+   (leg 8 (pt 1.5 -0.6) (padstack 0))
+   (leg 9 (pt 1.5 -0.2) (padstack 0))
+   (leg 10 (pt 1.5 0.2) (padstack 0))
+   (leg 11 (pt 1.5 0.6) (padstack 0))
+   (leg 12 (pt 1.5 1) (padstack 0))
+   (leg 13 (pt 0 0) (padstack 13))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.2 0.8 0 0 0))
+   )
+   (padstack 13
+    (plated false)
+    (pad (layer TCOP) (rectf 1.8 2.55 0 0 90))
+   )
+   (model "ISL9110IRT7Z-T7A.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

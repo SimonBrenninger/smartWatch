@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "MXC4005XC"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "MXC4005XC")
+        (spec "default")
+    )
+)

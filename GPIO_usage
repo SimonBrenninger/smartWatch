@@ -1,0 +1,10 @@
+24 leds, pwr/dbg led, rst, btn0, 32.768k, uart, battery
+phototransistor
+accelerometer, health sensor: I2C
+
+35+2 minimum pins
+
+24 + 1 led
+nRST
+BTN0
+UART 4 Pins (RTS, TXD, CTS, RXD)

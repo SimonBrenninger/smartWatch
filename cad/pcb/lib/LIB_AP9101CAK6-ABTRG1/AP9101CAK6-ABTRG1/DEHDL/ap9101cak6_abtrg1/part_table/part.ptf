@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'AP9101CAK6_ABTRG1'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Diodes Inc.", "AP9101CAK6-ABTRG1" (!) = "", "SOT95P285X140-6N", "SOT23 (6-Pin)", "621-AP9101CAK6ABTRG1", "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP9101CAK6-ABTRG1?qs=W66WzN12R3Y9HS2QV9IuJA%3D%3D", "Battery Management Protection IC 1-Cell LI 3.0uA 3.5V", "https://www.diodes.com/assets/Datasheets/AP9101C.pdf", "1.4 mm"
+END_PART
+
+END.

@@ -1,0 +1,148 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "1541201NEA400"
+   (description "WURTH ELEKTRONIK - 1541201NEA400 - Phototransistor, 940 nm, 140 , 150 mW, 2 Pins, 1206, WL-STCB Series")
+   (family "ANA")
+   (package "1541201NEA400")
+   (attribute "Datasheet Link" "https://www.mouser.dk/datasheet/2/445/1541201NEA400-1715480.pdf")
+   (attribute "Geometry.Height" "1.2mm")
+   (attribute "Mouser Part Number" "710-1541201NEA400")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/1541201NEA400?qs=u16ybLDytRZ%252BRXqtXC1wNA%3D%3D")
+   (attribute "Manufacturer_Name" "Wurth Elektronik")
+   (attribute "Manufacturer_Part_Number" "1541201NEA400")
+   (gate
+    (symbol "1541201NEA400")
+    (pin "E" 2 PS)
+    (pin "C" 1 PS)
+   )
+  )
+  (symbol "1541201NEA400"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (circle (pt 0 -150) (pt -100 -450))
+   )
+   (graphic
+    (stroke 20)
+    (path (pt -100 -200) (pt -100 -400))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt -100 -250) (pt 0 -150))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 0 -450) (pt 0 -500))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt 0 -150) (pt 0 -100))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt -100 -350) (pt 0 -450))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt -300 -80) (pt -200 -180))
+   )
+   (graphic
+    (stroke 10)
+    (path (pt -360 -140) (pt -260 -240))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt -70 -400) (pt -50 -380) (pt -30 -420) (pt -70 -400))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt -320 -210) (pt -290 -180) (pt -260 -240) (pt -320 -210))
+   )
+   (graphic
+    (stroke 10)
+    (path (closed true) (pt -260 -150) (pt -230 -120) (pt -200 -180) (pt -260 -150))
+   )
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 -600) (rot 90) (mir 0) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible true))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+   (terminal
+    (body (symbol "PINSHORT") (pt 0 0) (rot 90) (mir X) (visible true))
+    (name (pt 0 -20) (rot 90) (just TOP RIGHT) (visible true))
+    (number (pt 0 20) (rot 90) (just TOP LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "1541201NEA400"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.6 0.8)
+      (pt 1.6 0.8)
+      (pt 1.6 -0.8)
+      (pt -1.6 -0.8)
+      (pt -1.6 0.8))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.5 1.8)
+      (pt 3 1.8)
+      (pt 3 -1.8)
+      (pt -3.5 -1.8)
+      (pt -3.5 1.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -0.6 -0.8)
+      (pt 0.6 -0.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.4 0)
+      (arc (pt -2.400 0.000) (pt -2.500 -0.050) (pt -2.400 0.050) (start 180.0) (sweep .0))
+      (pt -2.5 0)
+      (arc (pt -2.500 0.000) (pt -2.500 -0.050) (pt -2.400 0.050) (start 180.0) (sweep 180.0))
+      (pt -2.4 0))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -0.6 0.8)
+      (pt 0.6 0.8))))
+   (leg 1 (pt -1.500 0.000) (padstack 0))
+   (leg 2 (pt 1.500 0.000) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.000 1.600 0 0 90.000))
+   )
+   (model "1541201NEA400.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

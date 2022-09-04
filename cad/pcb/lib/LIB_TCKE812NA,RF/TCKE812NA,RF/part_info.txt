@@ -1,0 +1,9 @@
+Manufacturer=Toshiba
+PartNumber=TCKE812NA,RF
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=15
+Version=1.1
+Released=2021-02-21 19:19:41
+Downloaded=2022-07-03 16:56:16
+3D=Y

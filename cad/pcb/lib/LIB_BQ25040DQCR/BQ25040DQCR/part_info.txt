@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=BQ25040DQCR
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline No-lead
+PinCount=11
+Version=2.1
+Released=2017-01-12 12:59:53
+Downloaded=2022-07-03 16:51:59
+3D=Y

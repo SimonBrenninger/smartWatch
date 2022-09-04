@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'CP2102N_A02_GQFN20R'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Silicon Labs", "CP2102N-A02-GQFN20R" (!) = "", "CP2102NA02GQFN20", "Other", "634-CP2102NA02QFN20R", "https://www.mouser.co.uk/ProductDetail/Silicon-Labs/CP2102N-A02-GQFN20R?qs=u16ybLDytRbf2uwPkMBdUg%3D%3D", "Full Speed USB to UART Bridge USB 2.0 3.3V T/R Automotive 20-Pin QFN EP", "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf", "0.8 mm"
+END_PART
+
+END.

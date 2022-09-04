@@ -1,0 +1,16 @@
+.TCKE812NA_RF :1 ;Hot Swap Voltage Controllers 15.1V VOLTAGE CLMP AUTO RETRY
+TCKE812NARF
+*STM IC
+*NGS
+*PLB 1="DV/DT" 2="EN/UVLO" 3="VIN_1" 4="VIN_2" 5="VIN_3" 6="VOUT_1" 7="VOUT_2" 8="VOUT_3" 9="EFET" 10="ILIM" 11="GND_1" 12="GND_2" 13="GND_3" 14="GND_4" 15="GND_5"
+*MXP 15
+*DFN TCKE812NA_RF
+~!Mouser Part Number (757-TCKE812NA,RF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Toshiba/TCKE812NARF?qs=7MVldsJ5UazIz%2F5VEH%2F60g%3D%3D)
+~!Manufacturer_Name (Toshiba)
+~!Manufacturer_Part_Number (TCKE812NA,RF)
+~!Link Datasheet (https://www.arrow.com/en/products/tcke812narf/toshiba)
+~!Height (0.75mm)
+~!3D_Model (TCKE812NA,RF)
+TCKE812NA_RF
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 

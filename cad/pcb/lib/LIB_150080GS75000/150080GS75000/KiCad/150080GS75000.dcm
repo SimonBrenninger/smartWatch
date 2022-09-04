@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 150080GS75000
+D 150080GS75000, Wurth Elektronik WL-SMCW 520 nm Green LED, 2012 (0805) Clear SMD package
+K
+F https://katalog.we-online.com/led/datasheet/150080GS75000.pdf
+$ENDCMP
+#
+#End Doc Library

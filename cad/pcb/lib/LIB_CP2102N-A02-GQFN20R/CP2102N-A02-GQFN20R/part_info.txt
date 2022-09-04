@@ -1,0 +1,9 @@
+Manufacturer=Silicon Labs
+PartNumber=CP2102N-A02-GQFN20R
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=21
+Version=2.2
+Released=2019-03-25 11:57:19
+Downloaded=2022-07-03 16:51:25
+3D=Y

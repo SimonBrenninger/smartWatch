@@ -1,0 +1,16 @@
+.150060SS75000 :1 ;LED,Wurth Elektronik,150060SS75000 Wurth Elektronik 150060SS75000, WL-SMCW Series Red LED, 630 nm, 1608 (0603) Clear, Rectangle Lens SMD Package
+LEDC1608X80N
+*STM LED
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN 150060SS75000
+~!Mouser Part Number (710-150060SS75000)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/150060SS75000?qs=LlUlMxKIyB0oQaxwspeTEA%3D%3D)
+~!Manufacturer_Name (Wurth Elektronik)
+~!Manufacturer_Part_Number (150060SS75000)
+~!Link Datasheet (-)
+~!Height (0.8mm)
+~!3D_Model (150060SS75000)
+"150060SS75000"
+1.1!U 2.1!U 

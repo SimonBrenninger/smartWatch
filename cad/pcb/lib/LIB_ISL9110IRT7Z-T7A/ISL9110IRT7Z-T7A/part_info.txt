@@ -1,0 +1,9 @@
+Manufacturer=Renesas Electronics
+PartNumber=ISL9110IRT7Z-T7A
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline No-lead
+PinCount=13
+Version=1.1
+Released=2019-06-17 11:57:13
+Downloaded=2022-07-03 17:44:23
+3D=Y

@@ -1,0 +1,16 @@
+.AP9101CAK6-ABTRG1 :1 ;Battery Management Protection IC 1-Cell LI 3.0uA 3.5V
+SOT95P285X140-6N
+*STM IC
+*NGS
+*PLB 1="DO" 2="VM" 3="CO" 4="NC" 5="VDD" 6="VSS"
+*MXP 6
+*DFN AP9101CAK6-ABTRG1
+~!Mouser Part Number (621-AP9101CAK6ABTRG1)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP9101CAK6-ABTRG1?qs=W66WzN12R3Y9HS2QV9IuJA%3D%3D)
+~!Manufacturer_Name (Diodes Inc.)
+~!Manufacturer_Part_Number (AP9101CAK6-ABTRG1)
+~!Link Datasheet (https://www.diodes.com/assets/Datasheets/AP9101C.pdf)
+~!Height (1.4mm)
+~!3D_Model (AP9101CAK6-ABTRG1)
+AP9101CAK6-ABTRG1
+1.1!U 2.1!U 3.1!U 6.1!U 5.1!U 4.1!U 

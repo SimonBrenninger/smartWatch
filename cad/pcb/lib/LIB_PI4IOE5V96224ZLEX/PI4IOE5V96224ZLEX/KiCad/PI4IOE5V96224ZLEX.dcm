@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PI4IOE5V96224ZLEX
+D Interface - I/O Expanders 24-bit I2C-bus I/O Expander
+K
+F https://www.diodes.com/assets/Datasheets/PI4IOE5V96224.pdf
+$ENDCMP
+#
+#End Doc Library

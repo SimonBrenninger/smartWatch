@@ -1,0 +1,16 @@
+.ISL9110IRT7Z-T7A :1 ;Switching Voltage Regulators 1 2A SINGLE IND BUCK BOOST 3 3V 12LD
+SON40P300X300X75-13N
+*STM IC
+*NGS
+*PLB 1="VOUT" 2="LX2" 3="PGND" 4="LX1" 5="PVIN" 6="VIN" 7="PG" 8="'BAT'" 9="EN" 10="MODE/SYNC" 11="GND" 12="FB" 13="EP"
+*MXP 13
+*DFN ISL9110IRT7Z-T7A
+~!Mouser Part Number (968-ISL9110IRT7Z-T7A)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Renesas-Intersil/ISL9110IRT7Z-T7A?qs=dAsayXGOMrujtMdmCjK0tg%3D%3D)
+~!Manufacturer_Name (Renesas Electronics)
+~!Manufacturer_Part_Number (ISL9110IRT7Z-T7A)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-SFU4/DSASF4000-1643.pdf)
+~!Height (0.75mm)
+~!3D_Model (ISL9110IRT7Z-T7A)
+ISL9110IRT7Z-T7A
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 13.1!U 12.1!U 11.1!U 10.1!U 9.1!U 8.1!U 7.1!U 

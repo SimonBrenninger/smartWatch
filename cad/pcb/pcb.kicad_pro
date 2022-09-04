@@ -331,15 +331,11 @@
     ],
     [
       "e828b2c8-eb73-47a1-a501-c1ec49eac201",
-      "LED Output"
+      "LED Ring"
     ],
     [
       "6ceb5127-0d41-4184-9891-ccad90b63465",
-      "G-Sensor"
-    ],
-    [
-      "b4777b27-b127-4cec-b350-c3bd63ad1c79",
-      "Health Sensor"
+      "Sensors"
     ]
   ],
   "text_variables": {}
