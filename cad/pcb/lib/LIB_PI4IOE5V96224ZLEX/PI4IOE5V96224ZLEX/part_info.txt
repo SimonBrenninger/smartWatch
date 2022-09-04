@@ -1,9 +1,0 @@
-Manufacturer=Diodes Inc.
-PartNumber=PI4IOE5V96224ZLEX
-PartCategory=Integrated Circuit
-PackageCategory=Quad Flat No-Lead
-PinCount=33
-Version=1.1
-Released=2019-09-21 11:02:18
-Downloaded=2022-06-28 21:08:19
-3D=Y
