@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'KTS1620ERG_TR'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER2_PART_NUMBER", "MOUSER2_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Kinetic Technologies", "KTS1620ERG-TR" (!) = "", "QFN50P500X500X80-33N-D", "Quad Flat No-Lead", "", "", "Interface - I/O Expanders Low Voltage 24-bit I2C-bus I/O Expander", "", "0.8 mm"
+END_PART
+
+END.

@@ -5,6 +5,9 @@ accelerometer, health sensor: I2C
 35+2 minimum pins
 
 24 + 1 led
-nRST
 BTN0
 UART 4 Pins (RTS, TXD, CTS, RXD)
+BATT sense
+Photo
+I2C
+

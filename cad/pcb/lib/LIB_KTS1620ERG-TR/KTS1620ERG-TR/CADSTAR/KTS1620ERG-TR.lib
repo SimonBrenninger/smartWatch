@@ -1,0 +1,16 @@
+.KTS1620ERG-TR :1 ;Interface - I/O Expanders Low Voltage 24-bit I2C-bus I/O Expander
+QFN50P500X500X80-33N-D
+*STM IC
+*NGS
+*PLB 1="P2_7" 2="P2_4" 3="P2_5" 4="P2_6" 5="P2_3" 6="P2_1" 7="P2_0" 8="P1_7" 9="P1_6" 10="P1_5" 11="P0_1" 12="P1_4" 13="P1_3" 14="P1_2" 15="P0_6" 16="P1_1" 17="P1_0" 18="P0_7" 19="P0_5" 20="P0_3" 21="P0_4" 22="P2_2" 23="P0_2" 24="P0_0" 25="VDD_I2C" 26="SDA" 27="SCL" 28="VDD_P" 29="'RESET'" 30="'INT'" 31="ADDR" 32="VSS" 33="MC"
+*MXP 33
+*DFN KTS1620ERG-TR
+~!Mouser2 Part Number (-)
+~!Mouser2 Price/Stock (-)
+~!Manufacturer_Name (Kinetic Technologies)
+~!Manufacturer_Part_Number (KTS1620ERG-TR)
+~!Link Datasheet (-)
+~!Height (0.8mm)
+~!3D_Model (KTS1620ERG-TR)
+KTS1620ERG-TR
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 24.1!U 23.1!U 22.1!U 21.1!U 20.1!U 19.1!U 18.1!U 17.1!U 33.1!U 32.1!U 31.1!U 30.1!U 29.1!U 28.1!U 27.1!U 26.1!U 25.1!U 

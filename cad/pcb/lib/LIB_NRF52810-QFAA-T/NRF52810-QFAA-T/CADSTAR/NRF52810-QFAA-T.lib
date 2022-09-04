@@ -1,0 +1,17 @@
+.NRF52810-QFAA-T :1 ;RF System on a Chip - SoC BLE 5 Ready OTA QFN 48pin 6x6mm
+QFN40P600X600X90-49N
+*STM IC
+*NGS
+*PLB 1="DEC1" 2="P0.00/XL1" 3="P0.01/XL2" 4="P0.02/AIN0" 5="P0.03/AIN1" 6="P0.04/AIN2" 7="P0.05/AIN3" 8="P0.06" 9="P0.07" 10="P0.08" 11="P0.09" 12="P0.10" 13="VDD_1" 14="P0.11" 15="P0.12" 16="P0.13" 17="P0.14" 18="P0.15" 19="P0.16" 20="P0.17" 21="P0.18" 22="P0.19" 23="P0.20" 24="P0.21/NRESET" 25="SWDCLK" 26="SWDIO" 27="P0.22" 28="P0.23" 29="P0.24" 30="ANT" 31="VSS_1" 32="DEC2" 33="DEC3" 34="XC1" 35="XC2" 36="VDD_2" 37="P0.25" 38="P0.26" 39="P0.27" &
+40="P0.28/AIN4" 41="P0.29/AIN5" 42="P0.30/AIN6" 43="P0.31/AIN7" 44="NC" 45="VSS_2" 46="DEC4" 47="DCC" 48="VDD_3" 49="EP"
+*MXP 49
+*DFN NRF52810-QFAA-T
+~!Mouser2 Part Number (949-NRF52810-QFAA-T)
+~!Link Mouser2 Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=949-NRF52810-QFAA-T)
+~!Manufacturer_Name (Nordic Semiconductor)
+~!Manufacturer_Part_Number (NRF52810-QFAA-T)
+~!Link Datasheet (https://componentsearchengine.com//nRF52810-QFAA-T.pdf)
+~!Height (0.9mm)
+~!3D_Model (NRF52810-QFAA-T)
+NRF52810-QFAA-T
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 18.1!U 19.1!U 20.1!U 21.1!U 22.1!U 23.1!U 24.1!U 36.1!U 35.1!U 34.1!U 33.1!U 32.1!U 31.1!U 30.1!U 29.1!U 28.1!U 27.1!U 26.1!U 25.1!U 49.1!U 48.1!U 47.1!U 46.1!U 45.1!U 44.1!U 43.1!U 42.1!U 41.1!U 40.1!U 39.1!U 38.1!U 37.1!U 

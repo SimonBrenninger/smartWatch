@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "KTS1620ERG-TR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-01-04-05:15:00)
+    (mountForm default
+        (footprintRef "QFN50P500X500X80-33N-D")
+        (spec "System")
+    )
+)
