@@ -3524,7 +3524,7 @@
     (in_bom yes) (on_board yes)
     (uuid c5ff9421-e8a6-4638-ae42-8f5ef5154244)
     (property "Reference" "X3" (id 0) (at 41.91 184.15 90))
-    (property "Value" "NTC-Conn" (id 1) (at 41.91 186.69 90))
+    (property "Value" "NTC" (id 1) (at 41.91 186.69 90))
     (property "Footprint" "myLib:PinHeader_P2mm_1x02_SMD" (id 2) (at 43.18 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )

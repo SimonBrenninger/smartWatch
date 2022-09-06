@@ -53,11 +53,6 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
-        },
-        {
-          "gap": 0.2032,
-          "via_gap": 0.2032,
-          "width": 0.261112
         }
       ],
       "drc_exclusions": [],
@@ -356,7 +351,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "pcb.kicad_pro",
+    "filename": "pcb_cpy.kicad_pro",
     "version": 1
   },
   "net_settings": {
