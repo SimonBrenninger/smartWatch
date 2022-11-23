@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AP9101CAK6-ABTRG1
+D Battery Management Protection IC 1-Cell LI 3.0uA 3.5V
+K
+F https://www.diodes.com/assets/Datasheets/AP9101C.pdf
+$ENDCMP
+#
+#End Doc Library

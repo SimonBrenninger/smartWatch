@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCA9957HNMP
+D LED Lighting Drivers I2C 5 V Constant Current LED Controller
+K
+F https://componentsearchengine.com/Datasheets/2/PCA9957HNMP.pdf
+$ENDCMP
+#
+#End Doc Library

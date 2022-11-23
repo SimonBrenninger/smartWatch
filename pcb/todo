@@ -1,0 +1,41 @@
+power testpoints with jumper
+JST PH connector footprint
+smaller usb receptacle
+
+2.54mm pin-header
+
+RF Section:
+trace width: 0.293mm
+critical length: 5.6mm
+
+P=U*I
+
+P=U*U/R
+
+lcsc:
+JST
+SWD & UART conn
+SMD Cap 0603 1uF
+ferrite bead (https://lcsc.com/product-detail/Ferrite-Beads_FH-Guangdong-Fenghua-Advanced-Tech-CBW160808U310T_C361672.html)
+resettable fuse 0805 (https://lcsc.com/product-detail/Resettable-Fuses_Littelfuse-0805L110SLYR_C207024.html)
+R4 (Bat charger, 2512) (https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Ever-Ohms-Tech-CRH2512F330RE04Z_C175302.html)
+lipo battery
+
+NTC resistor
+ferrite bead footprint 0603
+esd footprint
+led driver footprint adapter (aisler.net?)
+uart silk text
+ssm6n6 mosfet d1 & d2 short to gnd
+thermal pads
+
+stlink/ft2232 idc adapter
+tinyfpga
+
+pcb-test:
+
+adjacent pins, gnd connections for ics, bridges for power planes
+
+4/7/8
+4-3
+4-6
