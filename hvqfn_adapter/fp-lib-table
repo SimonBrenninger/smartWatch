@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "LED Driver")(type "KiCad")(uri "/home/simon/Documents/hardware_dev/projects/smartWatch/pcb/lib/LIB_PCA9957HNMP/KiCad")(options "")(descr ""))
+)
