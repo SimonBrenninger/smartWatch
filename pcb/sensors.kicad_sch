@@ -1511,7 +1511,7 @@
     (uuid ac588a98-0165-458f-ade6-414c7b762940)
     (property "Reference" "V33" (id 0) (at 166.37 106.68 0))
     (property "Value" "PCA9957HNMP" (id 1) (at 171.45 109.22 0))
-    (property "Footprint" "Package_DFN_QFN:HVQFN-40-1EP_6x6mm_P0.5mm_EP4.1x4.1mm" (id 2) (at 212.09 58.42 0)
+    (property "Footprint" "Package_DFN_QFN:QFN-40-1EP_5x5mm_P0.4mm_EP3.6x3.6mm" (id 2) (at 212.09 58.42 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "https://componentsearchengine.com/Datasheets/2/PCA9957HNMP.pdf" (id 3) (at 212.09 60.96 0)

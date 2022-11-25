@@ -310,9 +310,6 @@
     (path "/d3884c04-9380-47db-a351-111e0f79aee5/b2981661-749a-4e48-84e6-571797b8351f"
       (reference "#PWR05") (unit 1) (value "GND") (footprint "")
     )
-    (path "/d3884c04-9380-47db-a351-111e0f79aee5/a5c99fd2-44f1-4ed1-ac10-9e41f87c14b8"
-      (reference "#PWR06") (unit 1) (value "GND") (footprint "")
-    )
     (path "/d3884c04-9380-47db-a351-111e0f79aee5/39946dd3-62c2-4411-8fa2-f6a676825a78"
       (reference "#PWR07") (unit 1) (value "GND") (footprint "")
     )
@@ -342,9 +339,6 @@
     )
     (path "/d3884c04-9380-47db-a351-111e0f79aee5/009050fe-e102-4df0-b544-d6c9515579e2"
       (reference "#PWR016") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/d3884c04-9380-47db-a351-111e0f79aee5/dea917d0-f82e-4dc8-9e5f-9b824c2ff3d6"
-      (reference "#PWR017") (unit 1) (value "GND") (footprint "")
     )
     (path "/d3884c04-9380-47db-a351-111e0f79aee5/f4d0206b-8b68-4131-8cc1-60576fafa3dd"
       (reference "#PWR018") (unit 1) (value "GND") (footprint "")
@@ -543,6 +537,9 @@
     )
     (path "/6ceb5127-0d41-4184-9891-ccad90b63465/42cf63bd-22a6-4022-80f7-1a12d3337828"
       (reference "#PWR083") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d3884c04-9380-47db-a351-111e0f79aee5/b96bf1c7-7b44-4d33-9c37-cf530a656292"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/83d55f7e-93d8-458a-b0d8-2b433b8d1273/bd6afc44-e94e-49c3-bb15-a7e57917b597"
       (reference "AE1") (unit 1) (value "Antenna_Chip") (footprint "myLib:Ignion_NN01-102_BT_WIFI")
@@ -842,7 +839,7 @@
       (reference "V32") (unit 1) (value "MXC4005XC") (footprint "Gyroscope:MXC4005XC")
     )
     (path "/6ceb5127-0d41-4184-9891-ccad90b63465/ac588a98-0165-458f-ade6-414c7b762940"
-      (reference "V33") (unit 1) (value "PCA9957HNMP") (footprint "Package_DFN_QFN:HVQFN-40-1EP_6x6mm_P0.5mm_EP4.1x4.1mm")
+      (reference "V33") (unit 1) (value "PCA9957HNMP") (footprint "Package_DFN_QFN:QFN-40-1EP_5x5mm_P0.4mm_EP3.6x3.6mm")
     )
     (path "/6ceb5127-0d41-4184-9891-ccad90b63465/365e8924-e1ca-431f-a4f2-abe7682da128"
       (reference "V34") (unit 1) (value "SFH 3710") (footprint "Phototransistor:LEDC2012X95N")
@@ -857,7 +854,7 @@
       (reference "X3") (unit 1) (value "NTC") (footprint "myLib:PinHeader_P2mm_1x02_SMD")
     )
     (path "/83d55f7e-93d8-458a-b0d8-2b433b8d1273/cd3f0e53-4d63-48a9-b861-a9cf0a798db9"
-      (reference "X4") (unit 1) (value "UART") (footprint "myLib:PinHeader_P2mm_1x03_SMD")
+      (reference "X4") (unit 1) (value "UART") (footprint "myLib:PinHeader_2x03_P1.27mm_Vertical_SMD")
     )
     (path "/83d55f7e-93d8-458a-b0d8-2b433b8d1273/c6c2584c-05cd-4e11-8cf9-75fa6fceb3dd"
       (reference "X5") (unit 1) (value "SWD") (footprint "myLib:PinHeader_2x05_P1.27mm_Vertical_SMD")

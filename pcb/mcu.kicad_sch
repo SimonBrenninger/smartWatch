@@ -2734,7 +2734,7 @@
     (property "Value" "UART" (id 1) (at 135.89 163.8299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "myLib:PinHeader_P2mm_1x03_SMD" (id 2) (at 133.35 162.56 0)
+    (property "Footprint" "myLib:PinHeader_2x03_P1.27mm_Vertical_SMD" (id 2) (at 133.35 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 133.35 162.56 0)

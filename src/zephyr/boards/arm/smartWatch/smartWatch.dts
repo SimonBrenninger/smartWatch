@@ -90,6 +90,8 @@
 
 &adc {
 	status = "okay";
+	//pincntr-0 = <&adc0_default>;
+	//pinctr-names = "default";
 };
 
 &gpiote {
