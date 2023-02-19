@@ -20,6 +20,8 @@ led driver footprint adapter (aisler.net?)
 uart silk text
 
 thermal pads
+route charge status to mcu to know when charging is finished
+charger otg pin high to enable otg charging
 
 stlink/ft2232 idc adapter
 tinyfpga
