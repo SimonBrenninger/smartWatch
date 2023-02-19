@@ -1,9 +1,7 @@
 /*
- * Copyright (c) 2018 Nordic Semiconductor ASA
- * Copyright (c) 2017 Shawn Nock <shawn@monadnock.ca>
- * Copyright (c) 2017 Linaro Limited
+ * Copyright (c) 2019-2022 Nordic Semiconductor ASA
  *
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
  */
 
 /dts-v1/;
@@ -17,14 +15,17 @@
 	chosen {
 		zephyr,console = &uart0;
 		zephyr,shell-uart = &uart0;
+
 		zephyr,uart-mcumgr = &uart0;
-		zephyr,bt-mon-uart = &uart0;
-		zephyr,bt-c2h-uart = &uart0;
+		//zephyr,bt-uart = &uart0;
+		//zephyr,bt-mon-uart = &uart0;
+		//zephyr,bt-c2h-uart = &uart0;
+
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zephyr,code-partition = &slot0_partition;
 	};
-
+ 
 	leds {
 		compatible = "gpio-leds";
 		led0: led_0 {
@@ -41,15 +42,11 @@
 		};
 		button1: button_1 {
 			label = "Push button switch 1";
-			gpios = <&gpio0 18 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-		};
-		button2: button_2 {
-			label = "Gyro Interrupt";
-			gpios = <&gpio0 10 (GPIO_ACTIVE_LOW)>;
+			gpios = <&gpio0 18 (GPIO_ACTIVE_LOW)>;
 		};
 	};
 
-	custum_pins {
+	custom_pins {
 		compatible = "gpio-keys";
 		gyroInt: gyro_int {
 			label = "Gyroscope interrupt signal";
@@ -61,11 +58,19 @@
 		};
 		batsens: bat_sens {
 			label = "Battery Voltage";
-			gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH)>;	// ANALOG
+			gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH)>;
 		};
 		photo: photo_sens {
 			label = "Phototransistor input";
-			gpios = <&gpio0 30 (GPIO_ACTIVE_HIGH)>; // ANALOG
+			gpios = <&gpio0 30 (GPIO_ACTIVE_HIGH)>;
+		};
+		miso: spi_miso {
+			label = "SPI MISO Signal";
+			gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH)>;
+		};
+		clk: spi_clk {
+			label = "SPI CLK Signal";
+			gpios = <&gpio0 15 (GPIO_ACTIVE_HIGH)>;
 		};
 
 	};
@@ -75,13 +80,18 @@
 		led0 = &led0;
 		btn0 = &button0;
 		btn1 = &button1;
+		miso = &miso;
+		clk  = &clk;
 
+		spi0 = &spi0;
+		i2c0 = &i2c0;
 		gyro-int = &gyroInt;
-		cs-io = &csIOExpander;
+		cs = &csIOExpander;
 		bat = &batsens;
 		photo = &photo;
 		
 		bootloader-led0 = &led0;
+		bootloader-button0 = &button0;
 		mcuboot-button0 = &button0;
 		mcuboot-led0 = &led0;
 		watchdog0 = &wdt0;
@@ -90,8 +100,6 @@
 
 &adc {
 	status = "okay";
-	//pincntr-0 = <&adc0_default>;
-	//pinctr-names = "default";
 };
 
 &gpiote {
@@ -103,14 +111,14 @@
 };
 
 &uart0 {
-	compatible = "nordic,nrf-uarte";
 	status = "okay";
+	compatible = "nordic,nrf-uart";
 	current-speed = <115200>;
 	pinctrl-0 = <&uart0_default>;
 	pinctrl-1 = <&uart0_sleep>;
 	pinctrl-names = "default", "sleep";
 };
-
+ 
 &i2c0 {
 	compatible = "nordic,nrf-twi";
 	status = "okay";
@@ -125,10 +133,22 @@
 	pinctrl-0 = <&spi0_default>;
 	pinctrl-1 = <&spi0_sleep>;
 	pinctrl-names = "default", "sleep";
+
+	/*
+	paw3212@0 {
+		compatible = "pixart,paw3212";
+		reg = <0>;
+		irq-gpios = <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		spi-max-frequency = <2000000>;
+	};
+	*/
 };
 
 &flash0 {
-
+	/*
+	 * For more information, see:
+	 * http://docs.zephyrproject.org/latest/guides/dts/index.html#flash-partitions
+	 */
 	partitions {
 		compatible = "fixed-partitions";
 		#address-cells = <1>;
@@ -140,19 +160,19 @@
 		};
 		slot0_partition: partition@c000 {
 			label = "image-0";
-			reg = <0x0000C000 0xd000>;
+			reg = <0x0000c000 0xe000>;
 		};
-		slot1_partition: partition@19000 {
+		slot1_partition: partition@1a000 {
 			label = "image-1";
-			reg = <0x00019000 0xd000>;
+			reg = <0x0001a000 0xe000>;
 		};
-		scratch_partition: partition@26000 {
+		scratch_partition: partition@28000 {
 			label = "image-scratch";
-			reg = <0x00026000 0x3000>;
+			reg = <0x00028000 0x4000>;
 		};
-		storage_partition: partition@29000 {
+		storage_partition: partition@2c000 {
 			label = "storage";
-			reg = <0x00029000 0x00007000>;
+			reg = <0x0002c000 0x00004000>;
 		};
 	};
 };

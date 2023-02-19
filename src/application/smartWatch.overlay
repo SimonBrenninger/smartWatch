@@ -1,0 +1,11 @@
+my_spi: &spi0 {
+    compatible = "nordic,nrf-spi";
+    status = "okay";
+	pinctrl-0 = <&spi0_default>;
+	pinctrl-1 = <&spi0_sleep>;
+	cs-gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+
+	my_spi_dev: spi-device@0 {
+		reg = <0>;
+	};
+};

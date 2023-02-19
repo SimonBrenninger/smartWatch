@@ -1,8 +1,0 @@
-# nRF52 DK nRF52810 board configuration
-
-# Copyright (c) 2018 Nordic Semiconductor ASA
-# SPDX-License-Identifier: Apache-2.0
-
-config BOARD_FEATHER_TEST
-	bool "feather_test"
-	depends on SOC_NRF52840_QIAA

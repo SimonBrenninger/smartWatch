@@ -7,6 +7,6 @@ toolchain:
   - gnuarmemb
   - xtools
 supported:
-  - counter
+  - ble
 ram: 24
 flash: 192
