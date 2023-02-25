@@ -1,10 +1,11 @@
 #include "header.h"
+#include "adc.h"
 
-LOG_MODULE_DECLARE(SmartWatchDemo, DEMO_LOG_LEVEL);
+LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);
 
 // adc definitions
 
-static const struct device *adc_dev = DEVICE_DT_GET(ADC_NODE);
+const struct device *adc_dev = DEVICE_DT_GET(ADC_NODE);
 
 int16_t adc_buf;
 

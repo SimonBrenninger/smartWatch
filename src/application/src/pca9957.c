@@ -1,13 +1,12 @@
 #include "header.h"
-#include "pca9957.h"
 
 //#define SET_FAULTY
 
-LOG_MODULE_DECLARE(SmartWatchDemo, DEMO_LOG_LEVEL);
+LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);
 
 // SPI struct definitions
 
-static const struct device *spi_dev = DEVICE_DT_GET(SPI_NODE);
+const struct device *spi_dev = DEVICE_DT_GET(SPI_NODE);
 
 uint8_t my_spi_buf[2];
 
@@ -26,7 +25,7 @@ struct spi_buf_set spi_buffers = {
 	.count = 1
 };
 
-void myspi_write(uint8_t addr, uint8_t data)
+void pca9957_write(uint8_t addr, uint8_t data)
 {
 	// ********** WRITING **********
 	// send first 7 bit with register address MSB
@@ -39,7 +38,7 @@ void myspi_write(uint8_t addr, uint8_t data)
 	spi_write(spi_dev, &config, &spi_buffers);
 }
 
-uint8_t myspi_read(uint8_t addr)
+uint8_t pca9957_read(uint8_t addr)
 {
 	// ********** READING **********
 	// send first 7 bit with register address MSB
@@ -64,7 +63,7 @@ uint8_t myspi_read(uint8_t addr)
 	return my_spi_buf[1];
 }
 
-void spi_test(void)
+void pca9957_test(void)
 {
 	uint8_t reg_addr;
 	uint8_t data;
@@ -83,7 +82,7 @@ void spi_test(void)
 	
 	// check for error in MODE2 (0x01) bit 6
 	reg_addr = 0x01; // MODE2
-	data = myspi_read(reg_addr);
+	data = pca9957_read(reg_addr);
 
 	if(data & BIT(6))
 	{
@@ -95,24 +94,24 @@ void spi_test(void)
 
 	/* disable auto-switchoff */
 	//data = data | BIT(3);
-	//myspi_write(reg_addr, data);
+	//pca9957_write(reg_addr, data);
 
 	/* set output current for all drivers */
 	// set output gain (IREFALL)
 	reg_addr = 0x6B;	// IREFALL
 	data = 0x10;
-	myspi_write(reg_addr, data);
+	pca9957_write(reg_addr, data);
 	k_msleep(1);
 
 	/* enable all drivers */
 	reg_addr = 0x6A; // PWMALL
 	data = 0x08;
-	myspi_write(reg_addr, data);
+	pca9957_write(reg_addr, data);
 	k_msleep(1);
 
 	/* check for error in MODE2 (0x01) bit 6 */
 	reg_addr = 0x01; // MODE2
-	data = myspi_read(reg_addr);
+	data = pca9957_read(reg_addr);
 
 	if(data & BIT(6))
 	{
@@ -123,7 +122,7 @@ void spi_test(void)
 		int idx = 0;
 		while (idx < 6)
 		{
-			data = myspi_read(reg_addr+idx);
+			data = pca9957_read(reg_addr+idx);
 			if(data == 0x0)
 				LOG_DBG("EFLAG%d: no error found", idx);
 			else
@@ -131,28 +130,10 @@ void spi_test(void)
 			idx++;
 		}
 	}
-#ifdef SET_FAULTY
-    test_faulty();
-#endif
 
 	k_msleep(100);
 	printk("\n");
 	return;
-}
-
-void test_faulty(void)
-{
-    //uint8_t reg, data;
-
-    // disable all outputs
-    myspi_write(0x08, 0x00);
-    myspi_write(0x09, 0x00);
-    myspi_write(0x0A, BIT(2));    //LEDOUT2
-    myspi_write(0x0B, 0x00);
-    myspi_write(0x0C, 0x00);
-    myspi_write(0x0D, 0x00);
-
-    return;
 }
 
 void spi_init(void)

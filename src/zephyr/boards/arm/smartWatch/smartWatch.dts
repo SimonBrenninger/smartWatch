@@ -50,7 +50,7 @@
 		compatible = "gpio-keys";
 		gyroInt: gyro_int {
 			label = "Gyroscope interrupt signal";
-			gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH)>;
+			gpios = <&gpio0 10 (GPIO_ACTIVE_LOW)>;
 		};
 		csIOExpander: cs_io_expander {
 			label = "IO Expander Chip-Select (CS)";
@@ -85,7 +85,7 @@
 
 		spi0 = &spi0;
 		i2c0 = &i2c0;
-		gyro-int = &gyroInt;
+		mxc400-int = &gyroInt;
 		cs = &csIOExpander;
 		bat = &batsens;
 		photo = &photo;

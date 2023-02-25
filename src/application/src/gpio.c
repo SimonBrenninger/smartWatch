@@ -4,7 +4,6 @@
 const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 const struct gpio_dt_spec button0 = GPIO_DT_SPEC_GET(BTN0_NODE, gpios);
 const struct gpio_dt_spec button1 = GPIO_DT_SPEC_GET(BTN1_NODE, gpios);
-const struct gpio_dt_spec gyro_int = GPIO_DT_SPEC_GET(GYRO_INT_NODE, gpios);
 
 uint8_t gpio_init(void)
 {
