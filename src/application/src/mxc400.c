@@ -43,8 +43,8 @@ void mxc400_test(void)
 	// interface with register 0x0A
 	buf[0] = 0x0A;
 	// set SHXPE (shake x+ enable) bit
-	buf[1] = BIT(1);
-	ret = i2c_write(i2c_dev, buf, 2, I2C_ADDRESS);
+	buf[1] = 0x0F;
+	ret = i2c_write(i2c_dev, buf, 2, MXC400_ADDRESS);
 	if(ret != 0)
 	{
 		LOG_ERR("Error writing to I2C device\n");
@@ -65,8 +65,8 @@ void mxc400_test(void)
 			// interface with register 0x00
 			buf[0] = 0x00;
 			// set SHXP (shake x+ enable) bit
-			buf[1] = BIT(1);
-			ret = i2c_write(i2c_dev, buf, 2, I2C_ADDRESS);
+			buf[1] = 0x0F;
+			ret = i2c_write(i2c_dev, buf, 2, MXC400_ADDRESS);
 			if(ret != 0)
 			{
 				LOG_ERR("Error clearing I2C interrupt\n");
