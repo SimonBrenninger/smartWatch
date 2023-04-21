@@ -310,6 +310,9 @@
     (path "/d3884c04-9380-47db-a351-111e0f79aee5/b2981661-749a-4e48-84e6-571797b8351f"
       (reference "#PWR05") (unit 1) (value "GND") (footprint "")
     )
+    (path "/d3884c04-9380-47db-a351-111e0f79aee5/b96bf1c7-7b44-4d33-9c37-cf530a656292"
+      (reference "#PWR06") (unit 1) (value "GND") (footprint "")
+    )
     (path "/d3884c04-9380-47db-a351-111e0f79aee5/39946dd3-62c2-4411-8fa2-f6a676825a78"
       (reference "#PWR07") (unit 1) (value "GND") (footprint "")
     )
@@ -537,9 +540,6 @@
     )
     (path "/6ceb5127-0d41-4184-9891-ccad90b63465/42cf63bd-22a6-4022-80f7-1a12d3337828"
       (reference "#PWR083") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/d3884c04-9380-47db-a351-111e0f79aee5/b96bf1c7-7b44-4d33-9c37-cf530a656292"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/83d55f7e-93d8-458a-b0d8-2b433b8d1273/bd6afc44-e94e-49c3-bb15-a7e57917b597"
       (reference "AE1") (unit 1) (value "Antenna_Chip") (footprint "myLib:Ignion_NN01-102_BT_WIFI")

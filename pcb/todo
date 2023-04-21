@@ -1,17 +1,11 @@
 power testpoints with jumper
 JST PH connector footprint
 smaller usb receptacle
-
-2.54mm pin-header
+add usb to uart bridge
 
 RF Section:
 trace width: 0.293mm
 critical length: 5.6mm
-
-P=U*I
-
-P=U*U/R
-lipo battery
 
 esd footprint
 ssm6n6 mosfet d1 & d2 short to gnd
@@ -22,10 +16,3 @@ uart silk text
 thermal pads
 route charge status to mcu to know when charging is finished
 charger otg pin high to enable otg charging
-
-stlink/ft2232 idc adapter
-tinyfpga
-
-pcb-test:
-
-adjacent pins, gnd connections for ics, bridges for power planes
