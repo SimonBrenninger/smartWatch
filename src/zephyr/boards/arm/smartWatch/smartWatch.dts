@@ -15,12 +15,7 @@
 	chosen {
 		zephyr,console = &uart0;
 		zephyr,shell-uart = &uart0;
-
 		zephyr,uart-mcumgr = &uart0;
-		//zephyr,bt-uart = &uart0;
-		//zephyr,bt-mon-uart = &uart0;
-		//zephyr,bt-c2h-uart = &uart0;
-
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zephyr,code-partition = &slot0_partition;
@@ -28,7 +23,7 @@
  
 	leds {
 		compatible = "gpio-leds";
-		led0: led_0 {
+		led0: led0 {
 			gpios = <&gpio0 25 GPIO_ACTIVE_LOW>;
 			label = "Red Debug LED";
 		};
@@ -36,11 +31,11 @@
 
 	buttons {
 		compatible = "gpio-keys";
-		button0: button_0 {
+		btn0: btn0 {
 			label = "Push button switch 0";
 			gpios = <&gpio0 20 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
 		};
-		button1: button_1 {
+		btn1: btn1 {
 			label = "Push button switch 1";
 			gpios = <&gpio0 18 (GPIO_ACTIVE_LOW)>;
 		};
@@ -48,53 +43,18 @@
 
 	custom_pins {
 		compatible = "gpio-keys";
-		gyroInt: gyro_int {
+		gyroint: gyroint {
 			label = "Gyroscope interrupt signal";
 			gpios = <&gpio0 10 (GPIO_ACTIVE_LOW)>;
 		};
-		csIOExpander: cs_io_expander {
-			label = "IO Expander Chip-Select (CS)";
-			gpios = <&gpio0 12 (GPIO_ACTIVE_HIGH)>;
-		};
-		batsens: bat_sens {
+		batsens: batsens {
 			label = "Battery Voltage";
 			gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH)>;
 		};
-		photo: photo_sens {
+		photo: photosens {
 			label = "Phototransistor input";
 			gpios = <&gpio0 30 (GPIO_ACTIVE_HIGH)>;
 		};
-		miso: spi_miso {
-			label = "SPI MISO Signal";
-			gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH)>;
-		};
-		clk: spi_clk {
-			label = "SPI CLK Signal";
-			gpios = <&gpio0 15 (GPIO_ACTIVE_HIGH)>;
-		};
-
-	};
-
-	/* These aliases are provided for compatibility with samples */
-	aliases {
-		led0 = &led0;
-		btn0 = &button0;
-		btn1 = &button1;
-		miso = &miso;
-		clk  = &clk;
-
-		spi0 = &spi0;
-		i2c0 = &i2c0;
-		mxc400-int = &gyroInt;
-		cs = &csIOExpander;
-		bat = &batsens;
-		photo = &photo;
-		
-		bootloader-led0 = &led0;
-		bootloader-button0 = &button0;
-		mcuboot-button0 = &button0;
-		mcuboot-led0 = &led0;
-		watchdog0 = &wdt0;
 	};
 };
 
@@ -125,6 +85,12 @@
 	pinctrl-0 = <&i2c0_default>;
 	pinctrl-1 = <&i2c0_sleep>;
 	pinctrl-names = "default", "sleep";
+
+	mxc400: mxc400@15 {
+		compatible = "memsic,mxc400xxc";
+		label = "MXC4005XC";
+		reg = <0x15>;
+	};
 };
 
 &spi0 {
@@ -133,15 +99,14 @@
 	pinctrl-0 = <&spi0_default>;
 	pinctrl-1 = <&spi0_sleep>;
 	pinctrl-names = "default", "sleep";
-
-	/*
-	paw3212@0 {
-		compatible = "pixart,paw3212";
+	cs-gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+	
+	pca9957: pca9957@0 {
+		compatible = "nxp,pca9957";
 		reg = <0>;
-		irq-gpios = <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-		spi-max-frequency = <2000000>;
+		spi-max-frequency = <10000000>;
 	};
-	*/
+	
 };
 
 &flash0 {
