@@ -5,7 +5,7 @@
 #include <zephyr/drivers/spi.h>
 
 
-#define SPI_NODE        DT_ALIAS(spi0)
+#define SPI_NODE        DT_NODELABEL(spi0)
 
 extern const struct device *spi_dev;
 

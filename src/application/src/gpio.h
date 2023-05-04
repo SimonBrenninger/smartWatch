@@ -4,10 +4,10 @@
 #include "header.h"
 #include <zephyr/drivers/gpio.h>
 
-#define LED0_NODE		DT_ALIAS(led0)
-#define BTN0_NODE		DT_ALIAS(btn0)
-#define BTN1_NODE		DT_ALIAS(btn1)
-#define GYRO_INT_NODE	DT_ALIAS(mxc400_int)
+#define LED0_NODE		DT_NODELABEL(led0)
+#define BTN0_NODE		DT_NODELABEL(btn0)
+#define BTN1_NODE		DT_NODELABEL(btn1)
+#define GYRO_INT_NODE	DT_NODELABEL(gyroint)
 
 extern const struct gpio_dt_spec led;
 extern const struct gpio_dt_spec button0;

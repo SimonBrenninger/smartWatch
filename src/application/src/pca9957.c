@@ -1,7 +1,5 @@
 #include "header.h"
 
-//#define SET_FAULTY
-
 LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);
 
 // SPI struct definitions
@@ -13,7 +11,7 @@ uint8_t my_spi_buf[2];
 struct spi_config config = {
 	.frequency = 1000000,
 	.operation = SPI_OP_MODE_MASTER | SPI_TRANSFER_MSB | SPI_WORD_SET(8),
-	.cs = SPI_CS_CONTROL_PTR_DT(DT_NODELABEL(my_spi_dev), 0),
+	.cs = SPI_CS_CONTROL_PTR_DT(DT_NODELABEL(pca9957), 0),
 };
 
 struct spi_buf spi_buffer = {
@@ -24,6 +22,10 @@ struct spi_buf_set spi_buffers = {
 	.buffers = &spi_buffer,
 	.count = 1
 };
+
+void pca9957_set_led(uint8_t led, uint8_t pwm) {}
+
+void pca9957_set_leds(uint8_t leds) {}
 
 void pca9957_write(uint8_t addr, uint8_t data)
 {
@@ -38,6 +40,15 @@ void pca9957_write(uint8_t addr, uint8_t data)
 	spi_write(spi_dev, &config, &spi_buffers);
 }
 
+/**
+ * @brief Read one byte from the specified address.
+ *
+ * @param addr 7-bit address to be read from
+ * @param rx_buf Buffer array where data to be read will be written to
+ *
+ * @retval 0 If successful.
+ * @retval -errno Negative errno code on failure.
+ */
 uint8_t pca9957_read(uint8_t addr)
 {
 	// ********** READING **********
@@ -131,7 +142,7 @@ void pca9957_test(void)
 		}
 	}
 
-	k_msleep(100);
+	//k_msleep(100);
 	printk("\n");
 	return;
 }

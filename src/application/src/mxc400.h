@@ -5,7 +5,7 @@
 #include <zephyr/drivers/i2c.h>
 #include <zephyr/drivers/gpio.h>
 
-#define I2C_NODE            DT_ALIAS(i2c0)
+#define I2C_NODE            DT_NODELABEL(i2c0)
 #define MXC400_ADDRESS      0x15
 
 // register definition
