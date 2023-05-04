@@ -1,5 +1,5 @@
-cad/pcb/lib
-cad/pcb/pcb-backups
+pcb/lib
+pcb/pcb-backups
 
 .vscode/
 build/
