@@ -1,5 +1,5 @@
-#ifndef HEADER_GPIO_INCLUDED
-#define HEADER_GPIO_INCLUDED
+#ifndef GPIO_INCLUDED
+#define GPIO_INCLUDED
 
 #include "header.h"
 #include <zephyr/drivers/gpio.h>
@@ -14,5 +14,6 @@ extern const struct gpio_dt_spec button0;
 extern const struct gpio_dt_spec button1;
 
 uint8_t gpio_init(void);
+void thread_photo(void);
 
-#endif // HEADER_GPIO_INCLUDED
+#endif // GPIO_INCLUDED

@@ -1,5 +1,5 @@
-#ifndef HEADER_MX400_INCLUDED
-#define HEADER_MX400_INCLUDED
+#ifndef MX400_INCLUDED
+#define MX400_INCLUDED
 
 #include "header.h"
 #include <zephyr/drivers/i2c.h>
@@ -92,4 +92,4 @@ extern const struct device *i2c_dev;
 
 void mxc400_test(void);
 
-#endif // HEADER_MX400_INCLUDED
+#endif // MX400_INCLUDED

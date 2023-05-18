@@ -1,5 +1,5 @@
-#ifndef HEADER_ADC_INCLUDED
-#define HEADER_ADC_INCLUDED
+#ifndef ADC_INCLUDED
+#define ADC_INCLUDED
 
 #include "header.h"
 #include <zephyr/drivers/adc.h>
@@ -14,4 +14,4 @@
 
 extern const struct device *adc_dev;
 
-# endif // HEADER_ADC_INCLUDED
+# endif // ADC_INCLUDED

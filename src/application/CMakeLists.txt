@@ -13,4 +13,5 @@ src/adc.c
 src/gpio.c
 src/mxc400.c
 src/pca9957.c
+src/pca9957_wrapper.c
 )

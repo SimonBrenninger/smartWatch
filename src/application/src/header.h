@@ -23,8 +23,10 @@
 #include "gpio.h"
 #include "mxc400.h"
 #include "pca9957.h"
+#include "pca9957_wrapper.h"
 
-#define LOG_LEVEL	LOG_LEVEL_DBG
+#define LOG_LEVEL	            LOG_LEVEL_DBG
 
+#define ERR_DEVICE_NOT_READY      BIT(1)
 
 #endif // HEADER_INCLUDED
