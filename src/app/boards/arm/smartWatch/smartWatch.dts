@@ -1,0 +1,143 @@
+/*
+ * Copyright (c) 2023 Simon Brenninger
+ *
+ * SPDX-License-Identifier: GPLv3
+ */
+
+/dts-v1/;
+#include <nordic/nrf52810_qfaa.dtsi>
+#include "smartWatch-pinctrl.dtsi"
+
+/ {
+	model = "smartWatch";
+	compatible = "nordic,smartWatch";
+
+	chosen {
+		zephyr,console = &uart0;
+		zephyr,shell-uart = &uart0;
+		zephyr,uart-mcumgr = &uart0;
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+		zephyr,code-partition = &slot0_partition;
+	};
+ 
+	leds {
+		compatible = "gpio-leds";
+		led0: led0 {
+			gpios = <&gpio0 25 GPIO_ACTIVE_LOW>;
+			label = "Red Debug LED";
+		};
+	};
+
+	buttons {
+		compatible = "gpio-keys";
+		btn0: btn0 {
+			label = "Push button switch 0";
+			gpios = <&gpio0 20 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+		};
+		btn1: btn1 {
+			label = "Push button switch 1";
+			gpios = <&gpio0 18 (GPIO_ACTIVE_LOW)>;
+		};
+	};
+
+	custom_pins {
+		compatible = "gpio-keys";
+		gyroint: gyroint {
+			label = "Gyroscope interrupt signal";
+			gpios = <&gpio0 10 (GPIO_ACTIVE_LOW)>;
+		};
+		batsens: batsens {
+			label = "Battery Voltage";
+			gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH)>;
+		};
+		photo: photosens {
+			label = "Phototransistor input";
+			gpios = <&gpio0 30 (GPIO_ACTIVE_HIGH)>;
+		};
+	};
+};
+
+&adc {
+	status = "okay";
+};
+
+&gpiote {
+	status = "okay";
+};
+
+&gpio0 {
+	status = "okay";
+};
+
+&uart0 {
+	status = "okay";
+	compatible = "nordic,nrf-uart";
+	current-speed = <115200>;
+	pinctrl-0 = <&uart0_default>;
+	pinctrl-1 = <&uart0_sleep>;
+	pinctrl-names = "default", "sleep";
+};
+ 
+&i2c0 {
+	compatible = "nordic,nrf-twi";
+	status = "okay";
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-1 = <&i2c0_sleep>;
+	pinctrl-names = "default", "sleep";
+
+	mxc400: mxc400@15 {
+		compatible = "memsic,mxc400xxc";
+		label = "MXC4005XC";
+		reg = <0x15>;
+	};
+};
+
+&spi0 {
+	compatible = "nordic,nrf-spi";
+	status = "okay";
+	pinctrl-0 = <&spi0_default>;
+	pinctrl-1 = <&spi0_sleep>;
+	pinctrl-names = "default", "sleep";
+	cs-gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+	
+	pca9957: pca9957@0 {
+		compatible = "nxp,pca9957";
+		reg = <0>;
+		spi-max-frequency = <10000000>;
+	};
+	
+};
+
+&flash0 {
+	/*
+	 * For more information, see:
+	 * http://docs.zephyrproject.org/latest/guides/dts/index.html#flash-partitions
+	 */
+	partitions {
+		compatible = "fixed-partitions";
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		boot_partition: partition@0 {
+			label = "mcuboot";
+			reg = <0x00000000 0xc000>;
+		};
+		slot0_partition: partition@c000 {
+			label = "image-0";
+			reg = <0x0000c000 0xe000>;
+		};
+		slot1_partition: partition@1a000 {
+			label = "image-1";
+			reg = <0x0001a000 0xe000>;
+		};
+		scratch_partition: partition@28000 {
+			label = "image-scratch";
+			reg = <0x00028000 0x4000>;
+		};
+		storage_partition: partition@2c000 {
+			label = "storage";
+			reg = <0x0002c000 0x00004000>;
+		};
+	};
+};

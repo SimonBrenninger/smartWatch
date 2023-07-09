@@ -1,0 +1,18 @@
+#
+# Copyright (c) 2023 Simon Brenninger
+#
+# SPDX-License-Identifier: GPLv3
+#
+
+if BOARD_SMARTWATCH
+
+config BOARD
+	default "smartWatch"
+
+config BT_CTLR
+	default BT
+
+config HW_STACK_PROTECTION
+	default ARCH_HAS_STACK_PROTECTION
+
+endif # BOARD_SMARTWATCH

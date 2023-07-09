@@ -1,6 +1,7 @@
 power testpoints with jumper
 JST PH connector footprint
 smaller usb receptacle
+led driver reset software-controlled
 
 2.54mm pin-header
 
