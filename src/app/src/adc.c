@@ -13,7 +13,7 @@ LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);
 
 const struct device *adc_dev = DEVICE_DT_GET(ADC_NODE);
 
-int16_t adc_buf;
+int16_t adc_buf; // why not uint8_t ?
 
 const struct adc_channel_cfg adc_cfg = {
 	.gain = ADC_GAIN,
@@ -32,37 +32,51 @@ struct adc_sequence sequence = {
 	.resolution = ADC_RESOLUTION
 };
 
-void adc_test(void)
-{
-	int ret;
-	if(!device_is_ready(adc_dev))
-	{
-		gpio_pin_set_dt(&led, 1);
-		return;
+int adc_init(void) {
+	int ret = 0;
+	if(!device_is_ready(adc_dev)) {
+		return -1;
 	}
 	
 	ret = adc_channel_setup(adc_dev, &adc_cfg);
-	if(ret != 0) {
-		LOG_ERR("ADC not ready!\n");
-		gpio_pin_set_dt(&led, 1);
-		return;
-	}
+	return ret;
+}
 
-	while (1)
+/**
+ * @brief get brightness of the photodiode.
+ * 
+ * @param brightness measured brightness off photodiode
+ * 			0x00: dark, 0xFF bright
+ * 
+ * @retval 0 If successful.
+ * @retval -errno Negative errno code on failure.
+ */
+int photo_get_brightness(uint8_t *brightness) {
+	int ret = adc_read(adc_dev, &sequence);
+	*brightness = (adc_buf < 0) ? 0 : adc_buf;
+	return ret;
+}
+
+void adc_test(void)
+{
+	int ret = 0;
+
+	uint8_t pwm;
+	int delay;
+	while (!ret)
 	{
-		uint8_t pwm = 0;
-		ret = adc_read(adc_dev, &sequence);
+		ret = photo_get_brightness(&pwm);
 		if(ret) {
 			LOG_ERR("failed reading ADC!\n");
 			gpio_pin_set_dt(&led, 1);
 			return;
 		}
-		// 10bit -> 8bit
-		pwm = (adc_buf * 20) / 1023;
+		delay = pwm*4; // 0...1000
+		printk("%d\t%d\n", pwm, delay);
 
 		gpio_pin_set_dt(&led, 1);
-		k_msleep(pwm);
+		k_usleep(delay);
 		gpio_pin_set_dt(&led, 0);
-		k_msleep(20 - pwm);
+		k_usleep(1000 - delay);
 	}
 }

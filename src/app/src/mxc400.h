@@ -10,6 +10,7 @@
 #include "header.h"
 #include <zephyr/drivers/i2c.h>
 #include <zephyr/drivers/gpio.h>
+#include <zephyr/sys/util.h>
 
 #define I2C_NODE            DT_NODELABEL(i2c0)
 #define MXC400_ADDRESS      0x15
@@ -98,5 +99,9 @@ extern const struct device *i2c_dev;
 
 int mxc400_init(void);
 void mxc400_thread(void *, void *, void *);
+void mxc400_callback(const struct device *dev, struct gpio_callback *cb, uint32_t pins);
+int mxc400_interrupt_enable(uint16_t intr_flags);
+int mxc400_interrupt_clear(uint16_t intr_flags);
+int mxc400_interrupt_pending(uint16_t *intr_flags);
 
 #endif // MX400_INCLUDED

@@ -8,9 +8,12 @@
 
 LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);
 
-struct counter_alarm_cfg alarm_cfg;
+static struct tm rtc_time;
 
-int rtc_init(const struct device *counter_dev) {
+static struct counter_alarm_cfg alarm_cfg;
+
+int rtc_init(const struct device *counter_dev)
+{
 	int ret = 0;
     if (!device_is_ready(counter_dev)) {
 		ret = -1;
@@ -36,7 +39,7 @@ static void test_counter_interrupt_fn(const struct device *counter_dev,
 	now_usec = counter_ticks_to_us(counter_dev, now_ticks);
 	now_sec = (int)(now_usec / USEC_PER_SEC);
 
-    gpio_pin_toggle_dt(&led);
+    //gpio_pin_toggle_dt(&led);
 	printk("!!! Alarm !!!\n");
 	printk("Now: %u\n", now_sec);
 
@@ -91,4 +94,14 @@ void rtc_thread(void *, void *, void *)
 	while (1) {
 		k_sleep(K_FOREVER);
 	}
+}
+
+void rtc_get_time(struct tm *current_time)
+{
+	*current_time = rtc_time;
+}
+
+void rtc_set_time(struct tm *current_time)
+{
+	rtc_time = *current_time;
 }

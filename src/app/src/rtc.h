@@ -9,6 +9,7 @@
 
 #include "header.h"
 #include <zephyr/drivers/counter.h>
+#include <time.h>
 
 #define TIMER DT_NODELABEL(rtc0)
 
@@ -17,5 +18,8 @@
 
 int rtc_init(const struct device *counter_dev);
 void rtc_thread(void *, void *, void *);
+
+void rtc_get_time(struct tm *current_time);
+void rtc_set_time(struct tm *current_time);
 
 #endif // RTC_INCLUDED

@@ -19,9 +19,12 @@ extern const struct device *pca9957_dev;
 #define HOUR(n)         PCA9957_LED(2*(n + 10))
 #define MINUTE(n)       PCA9957_LED((2*(n + 10) + 1))
 
+#define PCA_TASK_CLOCK      BIT(0)
+#define PCA_TASK_LOADING    BIT(1)
+
 int pca9957_init(void);
 void pca9957_thread(void *, void *, void *);
-int pca9957_loading_demo(uint8_t num_cycles, uint16_t delay);
-void pca9957_clock_demo(void);
+int pca9957_loading_demo(uint8_t brightness, uint8_t num_cycles, uint16_t delay_ms);
+void pca9957_clock_demo(uint8_t brightness, struct tm *time);
 
 #endif // PCA9957_INCLUDED

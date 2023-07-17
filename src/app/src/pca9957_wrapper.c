@@ -161,7 +161,7 @@ int pca9957_set_led_pwm(uint32_t leds, uint8_t pwm) {
  *
  * @param leds selected LEDs; use PCA9957_LED(n) to choose a selection
  * or PCA9957_LEDS_MSK to select all channels
- * @param pwm 8-bit current setting (0x00 - 0xFF)
+ * @param current 8-bit current setting (0x00 - 0xFF)
  * 
  * @retval 0 If successful.
  * @retval -errno Negative errno code on failure.
