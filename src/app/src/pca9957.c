@@ -35,8 +35,7 @@ void pca9957_thread(void *, void *, void *)
 
 	while(1) {
 		// wait for notification
-		k_msleep(20000);
-		// notified
+		k_sleep(K_FOREVER);
 		photo_get_brightness(&brightness);
 		switch (pca_task) {
 			case PCA_TASK_CLOCK:

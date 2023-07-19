@@ -18,6 +18,7 @@
 #include <zephyr/devicetree.h>
 #include <zephyr/sys/printk.h>
 #include <zephyr/logging/log.h>
+#include <zephyr/sys/util.h>
 
 #include "adc.h"
 #include "rtc.h"

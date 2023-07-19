@@ -12,7 +12,14 @@ LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);
 const struct device *i2c_dev = DEVICE_DT_GET(I2C_NODE);
 const struct gpio_dt_spec mxc400_int = GPIO_DT_SPEC_GET(GYRO_INT_NODE, gpios);
 
-static int int_detected = 0;
+static struct gpio_callback callback_data;
+
+static uint8_t int_detected = 0;
+
+void mxc400_callback(const struct device *dev, struct gpio_callback *cb, uint32_t pins) {
+	//int_detected = 1;
+	k_thread_resume(mxc400_tid);
+}
 
 /**
  * @brief mxc400 accelerometer thread
@@ -32,10 +39,13 @@ void mxc400_thread(void *, void *, void *)
 
 	while(1)
 	{
-		if(int_detected)
+		//if(int_detected == 1)
 		{
-			//gpio_pin_toggle_dt(&led);
-			LOG_DBG("interrupt detected");
+			k_sleep(K_FOREVER);
+			gpio_pin_toggle_dt(&led);
+			mxc400_interrupt_clear(MXC400_INTFLAG_CHORXY);
+			printk("isr cleared\n");
+			int_detected = 0;
 		}
 		k_msleep(100);
 	}
@@ -78,26 +88,21 @@ buf = 0x0E;
 int mxc400_init(void)
 {
 	int ret;
-	struct gpio_callback callback_data;
 
-	if (!device_is_ready(mxc400_int.port) || !device_is_ready(i2c_dev)) {
+	if (!device_is_ready(mxc400_int.port) ||
+		!device_is_ready(i2c_dev)) {
 		return -1;
 	}
 	
 	ret  = gpio_pin_configure_dt(&mxc400_int, GPIO_INPUT);
-	ret |= gpio_pin_interrupt_configure_dt(&mxc400_int, GPIO_INT_EDGE_TO_ACTIVE);
-
-	ret |= mxc400_interrupt_enable(MXC400_INTFLAG_CHORXY);
+	
+	ret |= gpio_pin_interrupt_configure_dt(&mxc400_int, GPIO_INT_EDGE_FALLING);
 	gpio_init_callback(&callback_data, mxc400_callback, BIT(mxc400_int.pin));
 	ret |= gpio_add_callback(mxc400_int.port, &callback_data);
+	
+
+	ret |= mxc400_interrupt_enable(MXC400_INTFLAG_CHORXY);
 	return ret;
-}
-
-void mxc400_callback(const struct device *dev, struct gpio_callback *cb, uint32_t pins) {
-	printk("hi from mxc400 callback\n");
-
-	//gpio_pin_toggle_dt(&led);
-	mxc400_interrupt_clear(MXC400_INTFLAG_CHORXY);
 }
 
 int mxc400_interrupt_enable(uint16_t intr_flags) {
