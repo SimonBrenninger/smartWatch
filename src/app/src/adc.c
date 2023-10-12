@@ -53,7 +53,7 @@ int adc_init(void) {
  */
 int photo_get_brightness(uint8_t *brightness) {
 	int ret = adc_read(adc_dev, &sequence);
-	*brightness = (adc_buf < 0) ? 0 : adc_buf;
+	*brightness = (adc_buf < 1) ? 1 : adc_buf;
 	return ret;
 }
 

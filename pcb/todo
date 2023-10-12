@@ -2,6 +2,8 @@ power testpoints with jumper
 JST PH connector footprint
 smaller usb receptacle
 led driver reset software-controlled
+battery protection 2.5V too low
+lower standby current (v0.1: 7mA@3.7V)
 
 2.54mm pin-header
 

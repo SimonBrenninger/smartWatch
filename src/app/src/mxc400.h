@@ -18,7 +18,9 @@
 // register definition
 
 #define MXC400_INT_SRC0         0x00
+#define MXC400_INT_CLR0         0x00
 #define MXC400_INT_SRC1         0x01
+#define MXC400_INT_CLR1         0x01
 #define MXC400_STATUS           0x02
 #define MXC400_XOUT_UPPER       0x03
 #define MXC400_XOUT_LOWER       0x04
@@ -51,7 +53,8 @@
 #define MXC400_INT_SRC1_ORZ     BIT(6)
 #define MXC400_INT_SRC1_TILT    BIT(7)
 
-#define MXC400_INT_SRC1_SW_RST  BIT(4)
+#define MXC400_INT_CLR1_DRDYC   BIT(0)
+#define MXC400_INT_CLR1_SW_RST  BIT(4)
 
 // register STATUS bit definitions
 #define MXC400_STATUS_ORIXY0    BIT(0)
@@ -103,5 +106,6 @@ void mxc400_callback(const struct device *dev, struct gpio_callback *cb, uint32_
 int mxc400_interrupt_enable(uint16_t intr_flags);
 int mxc400_interrupt_clear(uint16_t intr_flags);
 int mxc400_interrupt_pending(uint16_t *intr_flags);
+int mxc400_sw_reset(void);
 
 #endif // MX400_INCLUDED

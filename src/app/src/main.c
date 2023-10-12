@@ -43,7 +43,7 @@ void main(void)
 									  K_THREAD_STACK_SIZEOF(pca9957_stack),
 									  pca9957_thread,
 									  NULL, NULL, NULL,
-									  7, 0, K_NO_WAIT);
+									  6, 0, K_NO_WAIT);
 		
 		mxc400_tid = k_thread_create(&mxc400_thread_data, mxc400c_stack,
 									 K_THREAD_STACK_SIZEOF(mxc400c_stack),

@@ -16,6 +16,8 @@
 #define DELAY 1000000
 #define ALARM_CHANNEL_ID 0
 
+extern struct k_fifo pca_task_fifo;
+
 int rtc_init(const struct device *counter_dev);
 void rtc_thread(void *, void *, void *);
 

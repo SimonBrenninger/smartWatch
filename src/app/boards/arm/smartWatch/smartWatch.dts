@@ -58,6 +58,7 @@
 	};
 
 	aliases {
+		led0 = &led0;
 		sw0 = &btn0;
 	};
 };

@@ -8,45 +8,51 @@
 
 LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);
 
-static struct tm rtc_time;
+static void counter_callback(const struct device *counter_dev, uint8_t chan_id,
+							 uint32_t ticks, void *user_data);
 
+static struct tm rtc_time;
 static struct counter_alarm_cfg alarm_cfg;
 
 int rtc_init(const struct device *counter_dev)
 {
 	int ret = 0;
+
+	rtc_time.tm_hour = 3;
+	rtc_time.tm_min = 45;
+	rtc_time.tm_sec = 0;
+
     if (!device_is_ready(counter_dev)) {
 		ret = -1;
 	}
+
+	counter_start(counter_dev);
+
+	alarm_cfg.flags = 0;
+	alarm_cfg.ticks = counter_us_to_ticks(counter_dev, DELAY);
+	alarm_cfg.callback = counter_callback;
+	alarm_cfg.user_data = &alarm_cfg;
+
+	ret = counter_set_channel_alarm(counter_dev, ALARM_CHANNEL_ID, &alarm_cfg);
 	return ret;
 }
 
-static void test_counter_interrupt_fn(const struct device *counter_dev,
-				      uint8_t chan_id, uint32_t ticks,
-				      void *user_data)
+static void counter_callback(const struct device *counter_dev, uint8_t chan_id,
+ 							 uint32_t ticks, void *user_data)
 {
-	uint32_t now_ticks;
-	uint64_t now_usec;
-	int now_sec;
-	int err;
+	counter_set_channel_alarm(counter_dev, ALARM_CHANNEL_ID, &alarm_cfg);
 
-	err = counter_get_value(counter_dev, &now_ticks);
-	if (err) {
-		printk("Failed to read counter value (err %d)", err);
-		return;
-	}
-
-	now_usec = counter_ticks_to_us(counter_dev, now_ticks);
-	now_sec = (int)(now_usec / USEC_PER_SEC);
-
-    //gpio_pin_toggle_dt(&led);
-	printk("!!! Alarm !!!\n");
-	printk("Now: %u\n", now_sec);
-
-    err = counter_set_channel_alarm(counter_dev, ALARM_CHANNEL_ID,
-					user_data);
-	if (err != 0) {
-		printk("Alarm could not be set\n");
+	rtc_time.tm_sec++;
+	if (rtc_time.tm_sec == 60) {
+		rtc_time.tm_sec = 0;
+		rtc_time.tm_min++;
+		if (rtc_time.tm_min == 60) {
+			rtc_time.tm_min = 0;
+			rtc_time.tm_hour++;
+			if (rtc_time.tm_hour == 60) {
+				rtc_time.tm_hour = 0;
+			}
+		}
 	}
 }
 
@@ -68,32 +74,6 @@ void rtc_thread(void *, void *, void *)
 	}
 
 	LOG_DBG("RTC initialized");
-
-	counter_start(counter_dev);
-
-	alarm_cfg.flags = 0;
-	alarm_cfg.ticks = counter_us_to_ticks(counter_dev, DELAY);
-	alarm_cfg.callback = test_counter_interrupt_fn;
-	alarm_cfg.user_data = &alarm_cfg;
-
-	err = counter_set_channel_alarm(counter_dev, ALARM_CHANNEL_ID,
-					&alarm_cfg);
-	printk("Set alarm in %u sec (%u ticks)\n",
-	       (uint32_t)(counter_ticks_to_us(counter_dev,
-					   alarm_cfg.ticks) / USEC_PER_SEC),
-	       alarm_cfg.ticks);
-
-	if (-EINVAL == err) {
-		//printk("Alarm settings invalid\n");
-	} else if (-ENOTSUP == err) {
-		//printk("Alarm setting request not supported\n");
-	} else if (err != 0) {
-		//printk("Error\n");
-	}
-
-	while (1) {
-		k_sleep(K_FOREVER);
-	}
 }
 
 void rtc_get_time(struct tm *current_time)
