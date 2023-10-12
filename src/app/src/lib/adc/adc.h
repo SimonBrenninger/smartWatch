@@ -7,7 +7,7 @@
 #ifndef ADC_INCLUDED
 #define ADC_INCLUDED
 
-#include "header.h"
+#include "../lib.h"
 #include <zephyr/drivers/adc.h>
 
 #define ADC_NODE		DT_NODELABEL(adc)

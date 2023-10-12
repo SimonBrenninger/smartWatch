@@ -7,7 +7,7 @@
 #ifndef MX400_INCLUDED
 #define MX400_INCLUDED
 
-#include "header.h"
+#include "../lib.h"
 #include <zephyr/drivers/i2c.h>
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/sys/util.h>

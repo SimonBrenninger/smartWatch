@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: GPLv3
  */
 
-#ifndef HEADER_INCLUDED
-#define HEADER_INCLUDED
+#ifndef LIB_INCLUDED
+#define LIB_INCLUDED
 
 
 #include <inttypes.h>
@@ -20,12 +20,12 @@
 #include <zephyr/logging/log.h>
 #include <zephyr/sys/util.h>
 
-#include "adc.h"
-#include "rtc.h"
-#include "gpio.h"
-#include "mxc400.h"
-#include "pca9957.h"
-#include "pca9957_wrapper.h"
+#include "adc/adc.h"
+#include "gpio/gpio.h"
+#include "rtc/rtc.h"
+#include "mxc400/mxc400.h"
+#include "pca9957/pca9957.h"
+#include "pca9957/pca9957_wrapper.h"
 
 #define LOG_LEVEL	            LOG_LEVEL_DBG
 
@@ -38,4 +38,4 @@ extern k_tid_t mxc400_tid;
 extern k_tid_t adc_tid;
 extern k_tid_t rtc_tid;
 
-#endif // HEADER_INCLUDED
+#endif // LIB_INCLUDED

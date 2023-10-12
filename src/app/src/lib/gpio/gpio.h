@@ -7,7 +7,7 @@
 #ifndef GPIO_INCLUDED
 #define GPIO_INCLUDED
 
-#include "header.h"
+#include "../lib.h"
 #include <zephyr/drivers/gpio.h>
 
 #define LED0_NODE		DT_NODELABEL(led0)

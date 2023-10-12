@@ -7,7 +7,7 @@
 #ifndef PCA9957_INCLUDED
 #define PCA9957_INCLUDED
 
-#include "header.h"
+#include "../lib.h"
 #include <zephyr/drivers/spi.h>
 
 #define SPI_NODE        DT_NODELABEL(spi0)

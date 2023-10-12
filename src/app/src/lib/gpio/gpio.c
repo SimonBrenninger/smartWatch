@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPLv3
  */
 
-#include "header.h"
+#include "../lib.h"
 #include "gpio.h"
 
 const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);

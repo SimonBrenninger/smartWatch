@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPLv3
  */
 
-#include "header.h"
+#include "../lib.h"
 #include "mxc400.h"
 
 LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);

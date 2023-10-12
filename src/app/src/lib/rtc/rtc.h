@@ -7,7 +7,7 @@
 #ifndef RTC_INCLUDED
 #define RTC_INCLUDED
 
-#include "header.h"
+#include "../lib.h"
 #include <zephyr/drivers/counter.h>
 #include <time.h>
 
