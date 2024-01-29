@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: GPLv3
  */
 
+#include <stdint.h>
 #include "pca9957.h"
 
 #ifndef PCA9957_WRAPPER_INCLUDED

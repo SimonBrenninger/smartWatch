@@ -4,6 +4,11 @@
  * SPDX-License-Identifier: GPLv3
  */
 
+#include <zephyr/kernel.h>
+#include <zephyr/device.h>
+#include <zephyr/drivers/gpio.h>
+#include <zephyr/logging/log.h>
+
 #include "../lib.h"
 #include "mxc400.h"
 

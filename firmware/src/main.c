@@ -4,6 +4,9 @@
  * SPDX-License-Identifier: GPLv3
  */
 
+#include <zephyr/kernel.h>
+#include <zephyr/kernel/thread.h>
+#include <zephyr/logging/log.h>
 #include "lib/lib.h"
 
 LOG_MODULE_REGISTER(SmartWatchDemo, LOG_LEVEL);
@@ -29,7 +32,7 @@ struct k_thread rtc_thread_data;
 void main(void)
 {
 	int ret;
-	LOG_DBG("SmartWatch demo project");
+	LOG_DBG("SmartWatch main thread");
 
 	ret = gpio_init();
 	ret |= adc_init();

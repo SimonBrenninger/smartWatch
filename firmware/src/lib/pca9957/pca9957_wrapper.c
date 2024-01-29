@@ -4,6 +4,12 @@
  * SPDX-License-Identifier: GPLv3
  */
 
+#include <zephyr/kernel.h>
+#include <zephyr/device.h>
+#include <zephyr/drivers/spi.h>
+#include <zephyr/logging/log.h>
+#include <stdint.h>
+
 #include "pca9957.h"
 
 LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);
@@ -222,5 +228,5 @@ int pca9957_read(uint8_t reg, uint8_t *rx_buf) {
 
 	ret |= spi_read(pca9957_dev, &config, &spi_buffers);
 	*rx_buf = my_spi_buf[1];
-    return ret;
+	return ret;
 }

@@ -4,6 +4,10 @@
  * SPDX-License-Identifier: GPLv3
  */
 
+#include <zephyr/kernel.h>
+#include <zephyr/device.h>
+#include <zephyr/logging/log.h>
+
 #include "../lib.h"
 
 LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);

@@ -4,6 +4,11 @@
  * SPDX-License-Identifier: GPLv3
  */
 
+#include <zephyr/kernel.h>
+#include <zephyr/device.h>
+#include <zephyr/logging/log.h>
+#include <zephyr/drivers/adc.h>
+
 #include "../lib.h"
 #include "adc.h"
 

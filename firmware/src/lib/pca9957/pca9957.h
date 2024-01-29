@@ -7,8 +7,12 @@
 #ifndef PCA9957_INCLUDED
 #define PCA9957_INCLUDED
 
+#include <zephyr/kernel.h>
+#include <zephyr/device.h>
+#include <zephyr/devicetree.h>
+#include <stdint.h>
+#include <time.h>
 #include "../lib.h"
-#include <zephyr/drivers/spi.h>
 
 #define SPI_NODE        DT_NODELABEL(spi0)
 
@@ -34,7 +38,7 @@ struct pca_task_el {
 	uint8_t task;
 };
 
-extern volatile uint8_t pca_rdy;
+extern volatile uint8_t pca_rdy; // use semaphore instead?
 
 int pca9957_init(void);
 void pca9957_thread(void *, void *, void *);

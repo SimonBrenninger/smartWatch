@@ -7,19 +7,9 @@
 #ifndef LIB_INCLUDED
 #define LIB_INCLUDED
 
-
-#include <inttypes.h>
-#include <stddef.h>
-#include <stdint.h>
-
 #include <zephyr/kernel.h>
-#include <zephyr/device.h>
-#include <zephyr/sys_clock.h>
-#include <zephyr/devicetree.h>
-#include <zephyr/sys/printk.h>
+#include <zephyr/kernel/thread.h>
 #include <zephyr/logging/log.h>
-#include <zephyr/sys/util.h>
-
 #include "adc/adc.h"
 #include "gpio/gpio.h"
 #include "rtc/rtc.h"
@@ -29,7 +19,8 @@
 
 #define LOG_LEVEL	            LOG_LEVEL_DBG
 
-#define ERR_DEVICE_NOT_READY    BIT(1)
+#define RETURN_SUCCESS		0x0
+#define RETURN_FAILURE		0x1
 
 #define THREAD_STACK_SIZE       1024
 

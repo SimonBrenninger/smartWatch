@@ -4,6 +4,15 @@
  * SPDX-License-Identifier: GPLv3
  */
 
+#include <zephyr/kernel.h>
+#include <zephyr/kernel/thread.h>
+#include <zephyr/device.h>
+#include <zephyr/devicetree.h>
+#include <zephyr/drivers/spi.h>
+#include <zephyr/logging/log.h>
+#include <stdint.h>
+#include <time.h>
+
 #include "../lib.h"
 
 LOG_MODULE_DECLARE(SmartWatchDemo, LOG_LEVEL);
@@ -103,7 +112,7 @@ void pca9957_thread(void *, void *, void *)
 int pca9957_init() {
 	int ret;
 	if(!device_is_ready(pca9957_dev)) {
-		return ERR_DEVICE_NOT_READY;
+		return RETURN_FAILURE;
 	}
 	// set current, pwm, led-mode
 	ret = pca9957_set_led_mode(PCA9957_LEDS_MSK, PCA9957_LEDMODE_OFF);
