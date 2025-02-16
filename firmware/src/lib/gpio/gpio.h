@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2023 Simon Brenninger
- *
+ * Copyright (c) 2025 Simon Brenninger
  * SPDX-License-Identifier: GPLv3
  */
 
@@ -11,9 +10,9 @@
 #include <zephyr/drivers/gpio.h>
 
 #define LED0_NODE		DT_NODELABEL(led0)
-#define BTN0_NODE		DT_NODELABEL(btn0)
-#define BTN1_NODE		DT_NODELABEL(btn1)
-#define GYRO_INT_NODE	DT_NODELABEL(gyroint)
+#define BUTTON0_NODE		DT_NODELABEL(button0)
+#define BUTTON1_NODE		DT_NODELABEL(button1)
+#define GYRO_INT_NODE		DT_NODELABEL(gyroint)
 
 extern const struct gpio_dt_spec led;
 extern const struct gpio_dt_spec button0;

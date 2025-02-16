@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2023 Simon Brenninger
- *
+ * Copyright (c) 2025 Simon Brenninger
  * SPDX-License-Identifier: GPLv3
  */
 
@@ -11,6 +10,7 @@
 
 LOG_MODULE_REGISTER(SmartWatchDemo, LOG_LEVEL);
 
+///*
 K_THREAD_STACK_DEFINE(pca9957_stack, THREAD_STACK_SIZE);
 K_THREAD_STACK_DEFINE(mxc400c_stack, THREAD_STACK_SIZE);
 K_THREAD_STACK_DEFINE(rtc_stack, THREAD_STACK_SIZE);
@@ -23,17 +23,19 @@ k_tid_t rtc_tid;
 struct k_thread pca9957_thread_data;
 struct k_thread mxc400_thread_data;
 struct k_thread rtc_thread_data;
+//*/
 
 
 /**
  * @brief main thread
  */
 
-void main(void)
+int main(void)
 {
 	int ret;
 	LOG_DBG("SmartWatch main thread");
 
+	///*
 	ret = gpio_init();
 	ret |= adc_init();
 
@@ -60,7 +62,8 @@ void main(void)
 								  NULL, NULL, NULL,
 								  5, 0, K_NO_WAIT);
 	}
-	return;
+	//*/
+	return 0;
 }
 
 /* 

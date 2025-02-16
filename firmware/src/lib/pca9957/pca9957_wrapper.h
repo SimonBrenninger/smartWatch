@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2023 Simon Brenninger
- *
+ * Copyright (c) 2025 Simon Brenninger
  * SPDX-License-Identifier: GPLv3
  */
 

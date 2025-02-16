@@ -1,4 +1,10 @@
+** Hardware
+* add external flash & ram
+* gps receiver
+* IMU
+* usb-uart converter
 
+** Software
 * organize individual modules into ./lib subfolders (./lib/mxc400x) and add (if neccessary) multiple HAL layers
 * setup zephyr's test tools
 * create hardware-independent wrapper for the target hardware

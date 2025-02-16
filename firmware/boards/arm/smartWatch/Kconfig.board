@@ -1,9 +1,0 @@
-#
-# Copyright (c) 2023 Simon Brenninger
-#
-# SPDX-License-Identifier: GPLv3
-#
-
-config BOARD_SMARTWATCH
-	bool "SmartWatch"
-	depends on SOC_NRF52810_QFAA

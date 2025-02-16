@@ -1,10 +1,9 @@
 #
-# Copyright (c) 2023 Simon Brenninger
-#
+# Copyright (c) 2025 Simon Brenninger
 # SPDX-License-Identifier: GPLv3
 #
 
-identifier: smartWatch
+identifier: smartWatch/nrf52810
 name: smartWatch
 type: mcu
 arch: arm
@@ -13,6 +12,8 @@ toolchain:
   - gnuarmemb
   - xtools
 supported:
-  - ble
+  - counter
+  - gpio
 ram: 24
 flash: 192
+vendor: nordic

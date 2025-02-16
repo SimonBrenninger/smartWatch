@@ -1,0 +1,10 @@
+#
+# Copyright (c) 2025 Simon Brenninger
+# SPDX-License-Identifier: GPLv3
+#
+
+board:
+  name: smartWatch
+  vendor: custom
+  socs:
+  - name: nrf52810

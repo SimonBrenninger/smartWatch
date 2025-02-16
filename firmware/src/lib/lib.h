@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2023 Simon Brenninger
- *
+ * Copyright (c) 2025 Simon Brenninger
  * SPDX-License-Identifier: GPLv3
  */
 
@@ -12,15 +11,15 @@
 #include <zephyr/logging/log.h>
 #include "adc/adc.h"
 #include "gpio/gpio.h"
-#include "rtc/rtc.h"
+#include "timer/timer.h"
 #include "mxc400/mxc400.h"
 #include "pca9957/pca9957.h"
 #include "pca9957/pca9957_wrapper.h"
 
 #define LOG_LEVEL	            LOG_LEVEL_DBG
 
-#define RETURN_SUCCESS		0x0
-#define RETURN_FAILURE		0x1
+#define RETURN_SUCCESS		0
+#define RETURN_FAILURE		-1
 
 #define THREAD_STACK_SIZE       1024
 

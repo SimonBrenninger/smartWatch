@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2023 Simon Brenninger
- *
+ * Copyright (c) 2025 Simon Brenninger
  * SPDX-License-Identifier: GPLv3
  */
 
@@ -21,7 +20,7 @@ static uint8_t my_spi_buf[2];
 static struct spi_config config = {
 	.frequency = 1000000,
 	.operation = SPI_OP_MODE_MASTER | SPI_TRANSFER_MSB | SPI_WORD_SET(8),
-	.cs = SPI_CS_CONTROL_PTR_DT(DT_NODELABEL(pca9957), 0),
+	.cs = SPI_CS_CONTROL_INIT_INST(DT_NODELABEL(pca9957), 0),
 };
 
 static struct spi_buf spi_buffer = {
